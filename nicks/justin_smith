@@ -7362,3 +7362,250 @@ oh, thanks
 wow
 nice!
 cloud doggo http://img.ifcdn.com/images/c78ed94d1b826dd32e4276442f2f81b93987c4054c19517f8fb9573c07840319_1.jpg
+I mean, that was convenient for me and all
+so if he goes down, I can ssh into my clj-fatty box if I have internet at all, and restart
+me too
+does the bot know any good jokes?
+still have 2 gigs ram free on the server too
+quile: cool deal - that's the cred I needed, right
+the admin level irc password is built into the repo, lol
+D O G
+I think his ping time is better now too
+maybe because his IRC client and mine are in the same data center now :P
+D O G D O G
+WTF I'm not even sore today
+fucking spooky
+patchwork: so jeffgodd says that anejo shouldn't be chilled, because it has nuances to the flavor that are lost when it's cold
+YAY
+crunk
+any time, yeah
+back in the day, people would have like 17 birthdays in a year, thats how those dudes in the bible lived to be like 1000 and shit
+D O G D O G
+patchwork: apropos https://twitter.com/swervestray/status/726126859436449792
+he's a spicy one today
+THAT'S NUMBERWANT
+D O G D O G D O G D O G
+best line deleted from Anarchy in the UK
+yeah, I shoulD
+TIL -ck is a useful flag to the du command
+I am going to make a command called goo that does something particularly useful with the -se flags
+this amazing answer on the TeX stackexchange shows how to render text as if written by a demented cultist http://tex.stackexchange.com/a/29458
+man, that sounded like clickbait, sorry
+for patchwork, later: https://twitter.com/vineyille/status/742369921573781505
+relevant about dogdog http://qz.com/705273/mongolia-is-changing-all-its-addresses-to-three-word-phrases/
+quile: heh
+indeed it's remarkable
+D O G D O G D O G D O G D O G
+so I did a foolish thing the other day and got a cheap double bass
+well, only slightly foolish, or at least extravagent
+anyway, now listening to a Dittersdorf duet for bass and viola - it makes for a nice instrument combo (which is why I picked it up, for recording, I wanted to fill in more of the audible range
+)
+the thing is it's not so weird a combo (or maybe my perspective is skewed) - it's like a mellower violin/cello
+2 octaves apart rather than 1.5 apart
+quile: the other cool thing, is that C-G-D-A one octave below cello is a reasonable bass tuning
+which means I can pretend it's a viola (just 5 times as big and two octaves lower)
+quile: many use E A D G
+which is like a bass guitar
+but for classical double bass, it's either E A D G or C G D A or sometimes F# B E A for solos
+quile: I'm amazed actually, how many different tunings seem to get used https://en.wikipedia.org/wiki/Double_bass#Tuning
+more of a harp tuning, whatever "O" is
+quile: another thing - youtube red is totally worth it - unlike pandora you can go to specific artists whenever you want, and there are no ads - it's my best way to just browser random music now
+I haven't even used it for video - videos yet, I just leave it running for music
+cool
+there is so so much good classical on youtube too
+man, Giacinto Scelsi's stuff for strings is blowing my mind right now
+interesting, he was the one who first premeired Shostakovitch in Italy
+I've been listening to this playlist https://www.youtube.com/watch?v=JGkXgvM58cM&index=7&list=PLyryqOewYEcsYsIn1LaHqhKchmnGIwefq
+patchwork: https://twitter.com/vineyille/status/742369921573781505
+he's a pretty funny tweeter
+D O G
+TIL that Ligeti composed Ramifications to be performed by two string sections, tuned 1/4 tone apart, with the plan that they would unconsciously try to get into tune with the other section, and create a microtonal spectrum of results due to entropy.
+also, having a bass is awesome
+I just discovered 'lein cljfmt fix' today and I love it
+patchwork: so it's a tool that fixes whitespace errors in clojure code, I just ran it on the kingfisher repo - 1683 insertions, 1721 deletions
+it does things like removing trailing whitespace, fixing indentation errors, fixing dangling delimiters, etc.
+I don't agree 100% with every rule, but it's a simple way to get the repo 98% perfect, so I can lump the rest
+LOL
+patchwork: and the nice thing is it prevents whitespace merge errors - because all the other branch needs to do is run 'lein cljfmt fix' on their own branch before merging
+patchwork: https://twitter.com/geekysteven/status/744755881754124292
+it's good to have a thermostat that reminds you of this existential fact
+I see a future for informative messages from smart devices "WE ALL DIE"
+they are live streaming a road trip all the way around Iceland with a soundtrack by Sigur Ros http://www.ruv.is/routeone
+iceland? sigur ros? somebody
+no, I did not
+quile: they also have a live updating google-maps UI to show where the car is
+another bonus is that the sun will go down for less than 3 hours tonight in iceland
+patchwork: live stream of iceland road trip http://www.ruv.is/routeone
+“Because one person was injured, they killed thirty bears?” Dasha asked.
+“It’s enough if even one person suffered!” Sanya said. “Why should we put people at risk for the sake of bears?”
+http://www.outsideonline.com/2090866/bears-who-came-town-and-would-not-go-away
+a russian town is overrun by bears
+patchwork: you might be interested in the noise-jazz show tonight at disjecta
+some scandanavian folks are in town https://www.youtube.com/watch?v=RAFVSqdw22s
+8 pm right near the paul bunyan statue
+today I'm exploring John Cage's late tonal period(!) https://www.youtube.com/watch?v=BowyUXyNud4
+he did some very interesting and subtle stuff that is very different than his prior compositions to say the least
+another excellent version of the same work https://www.youtube.com/watch?v=NrcoCktxARg - really sublime
+patchwork: it's derived from "apartment house 1776" which took a mix of native american, african, and european music that existed in the year 1776 and just put it all side by side
+so it's somewhat random, but pretty grounded at the same time
+the juxtapositions are unconstrained, but the sources have a relatively strong link
+"The melon was stuffed with SpaghettiOs, police said, and left quite a mess on her porch."
+so having a bass is fucking awesome
+dude!
+anyway, it's a great instrument, so much fun
+very physically intense to play though - definitely the most athletic instrument I've played
+unless we count the wall zither (so much running back and forth to play that)
+patchwork: yeah, I did a few things last night / this morning that I am going to put out as my first "EP" on bandcamp
+quile: wall zither? or my bass playing?
+haha, not nearly
+I discovered the synth they used to make the seinfeld slap bass though - it's this specific FM synth that when you go through all the presets you can recognize the "instruments" used to play like every sound track to every sitcom
+I forget the name of the synth, but jared had one
+found the seinfeld slap bass synth - Korg M1 https://www.youtube.com/watch?v=K8LDID6j5rs
+quile: yeah, Sigur Rós did the sound track for that live Iceland broadcast I shared the other week if you didn't notice
+this video is a game for cats https://www.youtube.com/embed/qnUC-TOyrVw
+lol https://twitter.com/csandis/status/741545565616504832
+wow - google results for "transtonal" are totally shit, but duckduckgo has decent results
+oh, putting it in quotes fixes it
+artifically kinetic food is a three word poem https://mic.com/articles/144613/this-living-food-is-either-a-delicacy-or-a-thing-of-nightmares#.QtQg66HaV
+last night I had too much vodka home alone and accidentally made pretty music https://soundcloud.com/information/no-faking-it
+lol http://www.eatliver.com/adorable-baby-animals/
+https://twitter.com/CelloMetalgirl/status/746494949688938496
+funny times https://twitter.com/Snowden/status/745321947068833792
+I’m Very Angry That It’s Not Butter
+I'm Depressed That It's Not Butter
+Let's Negotiate How Much Of This Is Butter
+I Accept That It's Not Butter
+Man is a credulous animal, and must believe something; in the absence of good grounds for belief, he will be satisfied with bad ones. Here, have some butter. --Bertrand Russell
+http://www.polygon.com/2016/6/29/12063430/twitch-social-eating-food-streams-mukbang - you can now use twitch to broadcast a stream of yourself eating food
+Doggo
+is that the 6th stage of grief?
+some weird extremes in the history of notated music http://homes.soic.indiana.edu/donbyrd/CMNExtremes.htm
+wow, bartok has a piece with time (2+2+2+3)/8
+woah - (3+4)+(3+4)+(4+3+4)/8 is a weird ass time
+easier to play than the equivalent 25/8 I guess
+oh, Brün is cited on that page too
+wow - Ligeti's Atmospheres has a page with 77 staves
+patchwor_: the perfect synthesis of terry riley and arnold shoenburg
+every pitch, but hey, all of them are c
+I'm listening to Cage's "thirty pieces for string quartet" - super sparse and odd
+patchwor_: I have two versions of that, but not that one
+D O G D O G D O G D O G D O G D O G D O G D O G D O G D O G D O G D O G
+yeah, but my next day was fucked
+too much alcohol, too late into the night, it's my own fault of course.
+thanks
+patchwork: oh, something I meant to bring up but never really did - it turned out the bigger problem in that "sucking up the internet" code was simpler and more subtle than we initially thought.
+patchwork: every place where we parallelize on network usage was causing performance and stability issues
+patchwork: eg: hitting a geo server that has 4 cores with 1000 requests at once
+is worse than 1 at a time
+of course we have thread pools so we can adjust these things, but yeah, thought you might be interested
+patchwork: it's insidious because on localhost, network parallelizes to the limits of RAM
+patchwork: but of course once your mongo and phoenix are no longer on localhost, they suddenly have a cost and the potential to bottleneck in network usage
+patchwork: similar, we improved stability by making fewer smaller requests at a time rather than throwing more bigger ones
+(stability and performance)
+patchwork: and that localhost difference is a real gaslight
+because locally you don't see the bottleneck - the "network" is just shared memory!
+patchwork: sure, but that doesn't improve throughput
+they can handle that capacity, but that isn't the optimum usage
+anyway, figured you should know about this lesson
+right, benchmarking ftw
+patchwork: well, the number of cores is part of it - amdahl's law and all
+parallelism is possible beyond your bottleneck if you need to juggle that many inputs, but beyond your parallelism bottleneck it never improves performance
+and if it's a CPU/disk task and all threads use the same small number of CPUs and disk, that is your parallelism bottleneck
+I guess that's imprecise, and I'd be better off saying that concurrency can increase beyond your amdahl bottleneck, but parallelism can't, parallelism is the thing that improves performance, concurrency is the thing that lets you coordinate larger numbers of requests
+the harvard sentences are interesting http://www.cs.cmu.edu/afs/cs.cmu.edu/project/fgdata/OldFiles/Recorder.app/utterances/Type1/harvsents.txt
+patchwork: quile: is this too magic? https://gist.github.com/noisesmith/3490f2d3ed98e294e033b002bc2de178
+I am surprised something that enchanted is so easy in clojure
+I spent the weekend relearning ocaml, made a program that reads a midi stream from a device and moves a rectangle on the screen
+next step is to design the UI (just data transforms) and hook it up to csound, then I can use it to drive a synth on my raspi
+I realized all the things I've found most annoying with clojure are much better in ocaml
+not that ocaml is perfect of course, but it's been refreshing to use it again
+it's clunky in some ways for sure, but if I avoid the OO and mutation features I can live with the lack of laziness and the lack of numeric overloading
+coming back to ocaml from clojure, it's funny how many ocaml features I learned via clojure (which borrwoed the features from ml, or maybe ocaml, or maybe haskell)
+eg "as" in pattern matches
+general destructuring (as distinct from pattern matching) in any binding position
+so, get this: in ocaml you can output a function as bytes, and read it into another ocaml, and run it
+the representation is just the address within the application - it only works if the exact same executable reads it
+but it includes closed over data!
+one significant thing about this is that there is no compiler in the runtime during execution of machine code with ocaml - it's a "closed world"
+so they don't have the option of just sending source and compiling on the other end, or reflection tricks even (because most type data is erased in the executable, and simply implicit in the call structure)
+yup
+and fails if the binary is not the exact unique version on both sides
+also, I made a shell script that will run the same code against multiple clojure versions
+TODO is to group the results eg: 1.8,1.7,1.6 ... : 2
+https://gist.github.com/noisesmith/ef71c82ef8489b476493548f14abe448#file-test-clojure-versions
+today I am learning about generalized abstract data types
+patchwork: not currently, but I'll keep the ears open.
+gadt are crazy, btw
+generalized abstract data types
+basically what clojure does with every value
+but you can do it explicitly in a strongly typed lang - it's just that the logic of knowing what you are dealing with is insane
+patchwork: the "simple" version is generics
+the hard part, is being able to prove statically that your generic function can handle all the data types it will see at runtime
+without using a lot of boilerplate pattern matching that knows during dev a full enum of possible types, that is
+patchwork: the expression problem!
+patchwork: well, strongly typed languages use gadts instead of protocols
+because protocols are too weak
+patchwork: no, the gadt version is less manual than the other strongly typed alternatives
+they are just weird...
+but the point of the gadt is not to do it manually
+patchwork: the problem is that people want interfaces to be extensible
+patchwork: and how do you statically determine the validity of something using an extensible datum?
+patchwork: so you end up with type variables - abstract types, that is 'a which stands in for a type that is only known at runtime
+so that you can tell the compiler "the resul is a HashMap of 'a to 'b" - even though you don't know in your own code what types 'a and 'b are
+and you can write code that knows how to work with 'a and 'b at runtime, even if the input is an algebraic type where 'a and 'b is constructed from two of its potential constructors...
+so things get very interesting and confusing
+patchwork: alternatively you can just use an object system and method dispatch and say "runtime errors happen when an object comes in that does this method wrong, or doesn't do this method" - this is totally valid in ocaml (but people avoid it by using gadt, because they want that compile time checking)
+which, of course, is exactly what protocols/interfaces are about
+right - so it's slightly navel gazing because you can totally get your shit done with objects having potential runtime errors, but it's cool people figured out systems where that can't happen
+just like you can use malloc! but having a gc is nice
+quile: yeah, I am finding similar things playing with ocaml
+even something as simple as option types instead of opt-in nil checks
+yeah, it makes me happy that in ocaml mutability is opt-in rather than immutability being opt-in
+so the precise thing that you declare mutable is mutable (whether the container, or something in its fields, etc.)
+on the clojure side of things, I went ahead and rebinded the arrow keys to do paredit transforms - it saves me a bunch of typing
+patchwor_: remember to set up the auto-timeouts!
+patchwor_: also, btw, every time you create a kafka consumer, you are creating a thread that doesn't exit until you close that consumer down
+patchwor_: (I discovered this in profiling peregrine)
+patchwor_: this isn't a HUGE deal - they are threads with very short stack traces, so they don't use much memory, and they just sit there doing nothing (the OS only wakes them up when they have data to read) so they are not wasting cpu, just a bit of memory
+patchwor_: but you know, it's nicer not to have hundreds of little garbage threads around
+yes
+the clusters have been great - but watch out for zookeeper logs!
+zookeeper can run out of disk space for logs fast, and you need to rotate them out to s3 or /dev/null by hand
+patchwor_: three machines, each holds a zk and a kafka
+patchwor_: and the issue with the zk logs is that once you have a cluster, there's a LOT more log activity
+and the logs fill up the disk etc. etc.
+patchwor_: also, remember when we turned off the "64 connections from one host at a time" limit in zk?
+patchwor_: that limit being hit was exposing the thread leak bug
+the fact that the threads reading from kafka were never exiting, despite being done
+patchwor_: I blame the kafka API which simply hands you a "consumer" and doesn't tell you it contains a thread that doesn't exit until the consumer is gone (we were putting the consumer in a core.async go block, so it never disappeared)
+patchwor_: so I recommend never changing the 64 connections per host limit - and if you hit 64 connections from one host, fix the real problem (the fact that consumer garbage is building up)
+D O G D O G
+patchwor_: also, I discovered that you can do coordination via the kafka API instead of directly using zookeeper, since the messages are immutably and strongly ordered, you can have an algo that does a multi-part claim - the first consumer to complete the multi-step claim process uninterrupted by other overlapping claims wins
+I haven't done it yet, but it seems elegant if done right
+so it would look like send("I nominate me! <UID>"); send("Any objections?") followed by reading the stream you just sent too, and verifying no other nominations happened in between your nomination and your second message
+haha
+patchwor_: just remember to actually use coordination this time :)
+zookeeper is more general, but also very easy to do wrong
+it's simplicity is deceptive
+patchwor_: in order to coordinate via zookeeper, you need to do a read followed by a compare and set, then verify the result (success vs. fail) of the compare and set
+patchwor_: what ibis was doing was a read followed by a write, which is totally uncoordinated
+that is, guaranteed to be a race condition
+zookeeper only coordinates if you use coordination, neither read nor write coordinate, but having a watcher or using compare and set are steps toward coordination
+patchwor_: looking at the result isn't enough, because then you are potentially doing a write that fucks someone else up
+which is why you need compare and set, or failing that, at least a watcher that knows how to stay coordinated
+and no, it wasn't even checking the return value - it was just doing a read and a write in sequence
+this stuff has a lot of nuance, and the algo for using kafka is a lot simpler (since it is less powerful / less general there's less to worry about :) )
+I've got it on my insane TODO list for sure
+this picture of jupiter from the bottom is amazing
+http://www.nasa.gov/sites/default/files/images/145524main_image_feature_538_ys_full.jpg
+http://www.gifbin.com/bin/3204840swsw.gif
+this is awesome https://www.youtube.com/watch?v=tlzFovpnrpg - wild boar comes out of the water on the beach and starts attacking tourists https://www.youtube.com/watch?v=tlzFovpnrpg
+best comment: "did anybody catch it? you can usually breed at least one good dynastic monarchy out of a beast that emerges parthenogenetically from a body of water"
+link for patchwork later https://twitter.com/Bexdora/status/755785549701648385
+lichen are not a 2 organism symbiote, they are a 3 organism symbiote http://www.theatlantic.com/science/archive/2016/07/how-a-guy-from-a-montana-trailer-park-upturned-150-years-of-biology/491702/
+patchwork: you were asking about kafka stuff the other day - if you are going to crib of ibis a big issue to resolve is that if you need a listener on a temporary topic you need logic that shuts down that listener when you are no longer interested in the topic
+patchwork: it's not a huge problem - the garbage threads have very short stacks, but eventually with ibis there are a lot of them, and they never go away
+quile: oh yeah, I heard about idealist, and I was trying to remember where I heard that name
+yup, saw all that in the backlog
+D O G D O G D O G D O G
+D O G D O G

@@ -4807,3 +4807,146 @@ HAHAHAHHA
 ha ha ha ha haahahahahahhahaha
 lolz… great to have him back.  I’m having some weird problems with my Mac mini at home that he runs on.  Maybe we should move him to the cloud?
 it was for sure
+nice
+joke?
+lolz
+justin_smith: I’ll get you the twitter creds so dogdog can tweet his 3wps
+like that one
+yeah but it’s optional
+yeah I remember noticing that too
+and it also has a record (albeit out of order) of all of our IRC conversations.
+you agree.
+NOW
+yeah, you should have more birthdays
+totes.  Noah had like 400 birthdays.
+Doesn’t sound negative to me.
+one?
+two?
+eleven?
+THIRTEEN?
+14
+22?
+Ok, I’ll leave you to it then.
+He doesn’t seem to ever give out Numberwang any more
+11
+11
+11
+11
+11
+11
+13
+14
+12
+11
+one
+eleven
+FUCK!
+21
+thirty?
+nineteen
+sixteen?
+fifteen
+one two four five six seven eight nine ten numberwang for fuck’s sake?
+jesus
+yeah it’s making me sad too.  what’s wrong with it? one
+maybe one it’s two having four trouble
+with five numbers six that seven aren’t eight within nine text?
+eleven twelve thirteen?
+fourteen 14 fifteen 15 sixteen 16
+wow
+i like seventeen a lot
+but eighteen is nicer
+CRAP
+what about nineteen eh?
+fuck numberwang twenty one wangernumb
+HAH H! H H !H H!H!
+I think only “one” triggers it - it must be a bug in my regex or set membership test or something
+Totally amazing
+lol
+http://www.vox.com/2016/6/2/11837608/elon-musk-simulation-argument
+But that guy is totally a P Zombie
+H AH AH AH AH AHA HAH A
+Or is it the f2f equivalent of the Baader-Meinhof effect?
+Dittersdorf wrote some funky shit for weird combos
+I can tell.
+right I just mean unconventional… you’re totally right that it’s a good combo
+yeah isn’t it the standard?
+ah didn’t know that
+hahah
+I have been a Red user for a few months now… totally agree
+i’ll have to check it out
+that’s what javascript is: a perpetual cultural shift
+hahaha
+patchwork: are you working with Spencer at all?
+Ahh was just wondering if you guys were in the same area/department etc
+hahahahaha I *really* wish I’d been able to figure out how to encode an entire program in trailing whitespace
+as the perl module Acme::Bleach does with perl...
+In case you guys have forgotten: https://twitter.com/teozaurus/status/518071391959388160
+who are?
+that’s awesome… I want to go to Iceland so badly
+did you see Feigner’s pictures from his trip there?
+^^^!
+brilliant
+lol
+wow that’s trippy
+me too.  “epic” doesn’t seem to be hyperbolic enough for Iceland.
+of course
+hahaha
+^ this is a new kind of waterboarding.
+Does it sound like Seinfeld’s interludes?
+your bass playing
+hard to sneak when you’re at the better desk… unless that desk is also sneaky?
+Epic concert yesterday, patchwork
+The Arvo Pärt reminded me of the music of Sigur Rós, if you know who they are.  I wonder if they would claim him as an influence.
+thanks!
+Haha well it was either going to be them, or Björk
+hahah lol patchwork are you the high priest of that?
+^^^ nice
+any kind of combat piano is good.
+yuck
+^ a concert of works by William Byrd and Sweelinck?
+that would be an “Early Keyboard Spectacle"
+hahahahah
+hmmmm
+yo patchwork how was your anti-entropy do?
+Nope - it’s hard to create stuff in clojure that is too magical IMHO
+ewwww
+D!
+I like lunch.
+woah, perv
+We’re not hiring Jr devs right now - no bandwidth of Sr devs to mentor (yet)
+What about Instrument?
+Ha yeah, understandable.  But it’s a good place to spend a year and learn.
+I’m starting to feel the love for the Scala type system
+It’s really amazing how many classes of bugs that it catches.
+Still think the language is a bit of a mess, but it definitely has its upsides.
+Scala also solves the NPE problem in Java with Option[A]
+Yep
+But patchwork have you run into the hilarious problem with “immutable” things in Scala?
+where you say “val foo = Seq()” or something, expecting it to be immutable, but only the reference to it is immutable?  The thing can be mutated by anything
+So you have to have opt-in immutability
+by using case classes (which are awesome!) and immutable collections everywhere
+For sure
+And there are more good parts than in JS...
+Yeah case classes are more or less equiv to clj records
+but with clojure’s awesome functional abstractions
+^ ha lolz roflmao
+who?
+I’m not.
+3?
+Yeah of course - holy fucknuts
+I heard right after it happened bc a bunch of folks pinged Eric
+Yeah although he missed out on the bumper severance package!
+But he’s glad
+Yeah
+The Executive Director also pinged me later that day to let me know, in case I hadn’t heard.
+Which was funny/ironic in that it’s ultimately my fault
+(but not really)
+hahahah so he told them that letting two of his key employees move out west and run an office remotely was a big mistake
+I was one of those key employees
+It was 13 years ago
+Well, I didn’t think it was a mistake...
+But the people who were laid off can’t blame me for the layoff unless they also thank me for having their jobs in the first place
+As do I
+It made the Oregonian - there was a fairly long column about it in the biz pages over the w/e
+justin_smith: yeah I worked there for 11 years - I was indirectly the reason there was a PDX office in the first place.  And it’s where Max has worked for a few years.
