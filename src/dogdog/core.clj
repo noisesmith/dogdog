@@ -9,7 +9,8 @@
             [irclj.core :as irclj]
             [dogdog.novelty :as novelty]
             [dogdog.sentiment :as sentiment]
-            [dogdog.twp :as twp]))
+            [dogdog.twp :as twp])
+  (:import (java.util Date)))
 
 (def cfg (atom {}))
 (def irc-connection (atom nil))
@@ -276,6 +277,43 @@
         loaded)
       (catch Exception e (println "Couldn't read twitter config: " (.getMessage e))))))
 
+(defn track-startup
+  [irc-opts]
+  (update irc-opts :restarts-ms (fnil conj ()) (System/currentTimeMillis)))
+
+(def restart-delay
+  (* 1000 60 5))
+
+(defn shutdown-handler
+  [re-connect opts]
+  (println "handling lost irc connection at" (Date.))
+  (if (< (apply - (take 2 (:restarts-ms opts)))
+         restart-delay)
+    (re-connect opts)
+    (do (println "sleeping to avoid restarting too fast")
+        (Thread/sleep restart-delay)
+        (recur re-connect opts))))
+
+(defn run
+  [connect {:keys [history twitter channels] :as opts}]
+  (let [restart-opts (track-startup opts)
+        irc (connect)]
+    (dosync
+     (alter irc assoc-in [:callbacks :privmsg]
+            #'dogdog-handler)
+     (alter irc assoc-in [:callbacks :on-shutdown]
+            (fn [_]
+              (shutdown-handler (fn [opts]
+                                  (run connect (track-startup opts)))
+                                restart-opts)))
+     (alter irc assoc :chains
+            history))
+    (when-let [auth (System/getenv "IRC_AUTH")]
+      (irclj/identify irc auth))
+    (doseq [channel channels]
+      (irclj/join irc channel))
+    irc))
+
 (defn init
   ([]
     (println (str "Using config " @cfg))
@@ -286,7 +324,7 @@
     (init channels nil))
   ([channels nick]
     (let [twitter (load-twitter-config)
-          irc (irclj/connect "irc.freenode.net" 6667 (or nick "dogdog"))
+          connect-fn #(irclj/connect "irc.freenode.net" 6667 (or nick "dogdog"))
           _ (println "connected")
           nicks (tracked-nicks)
           _ (println "tracked nicks:" nicks)
@@ -298,13 +336,9 @@
                                                                     (:app-consumer-secret twitter)
                                                                     (:user-access-token twitter)
                                                                     (:user-access-secret twitter))))
-      (dosync
-       (alter irc assoc-in [:callbacks :privmsg] #'dogdog-handler)
-       (alter irc assoc :chains history))
-      (irclj/identify irc (System/getenv "DOGDOG_PASSWORD"))
-      (doseq [channel channels]
-        (irclj/join irc channel))
-      irc)))
+      (run connect-fn {:history history
+                       :twitter twitter
+                       :channels channels}))))
 
 ;;(declare irc)
 
