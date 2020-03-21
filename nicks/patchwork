@@ -4714,3 +4714,3597 @@ Ha!
 Well, it looks like he finally agrees with you
 Bastard
 I think it was a fair deal
+justin_smith: That's awesome! I thought all the memory came from holding the sentence graphs
+How does it sound??
+Haha sounds like fun
+So, what beyond the header does it need to be a correct mp3 file?
+I would assume if you get the header right you can have any arbitrary slew of bits follow..... that is not the case?
+Ahhh
+I see
+Interesting, I didn't realize the format was so undocumented
+Wacky
+That is insane
+quile: Yeah! I love that piece man
+Now I want to start a tango band
+3333333333
+justin_smith: It is quite serene : )
+With some good moments of tension....
+I'm not sure you can call that d# though
+Maybe, d# +/- some cents
+This is fairly amazing and thorough: https://github.com/Droogans/unmaintainable-code
+33333
+A fascinating history of spoon flatulence throughout the world, human and otherwise
+justin_smith: So... success?
+Yeah that session thing is annoying
+I thought I added that into zookeeper.clj
+Ah, so a new session
+Cool, let me know what you find
+I still feel like the session reconnect should be part of the zookeeper library
+Exactly the kind of thing you want to abstract over
+Well right, but how many different ways do you really want to handle that?
+And if anything you should pass in a function to handle it, and not have to build the machinery around watching for it and catching the exception on every request etc etc
+Right, exactly
+Then sure, expose the low level operation for when you really need it... but for the most part you want to reconnect and retry
+True
+justin_smith: Sure, coordination is lost. You can never get that lapse back. But this just pushes it back on to the application to figure out the coordination for that lapse, and avoiding that is the reason you are using zookeeper in the first place!
+Yeah it is weird
+It just feels incomplete
+If the application has to worry about being coordinated *sometimes*, why doesn't the application just deal with it all the time and bypass zookeeper altogether, since it is already doing that work?
+Yeah
+I mean, kafka is awesome
+I wouldn't mind using it for everything... but there are other ways I want to coordinate things sometimes
+Maybe just one layer above zookeeper
+I want the lib I thought zookeeper was : )
+Of course
+Has jepsen ever been run on jepsen I wonder?
+Right
+No, you can do things with distributed systems you can't do in a linear one
+but that just makes it harder to emulate linear systems with a distributed one
+Like doing things in a nondeterministic order?
+For one ; )
+I mean, I can imagine some synchronized system that only proceeds to the next step once it receives a message that the previous one is complete
+But why would you necessarily want to?
+The whole point of a distributed system is that you are not bound by linearity
+Parallelism is by definition non-linear
+Hmmm... not necessarily!
+Linearity is beneficial in being predictable and amenable to reasoning, but that is about it
+Just so that we can understand it ; )
+Right, so it is beneficial for the developer, not necessarily the system
+We have still never built anything as robust as a cell
+That is our limitation really
+We are just not smart enough ; )
+True, which is unfortunate
+Binary/logical/sequential thinking is a form of violence upon the interconnected nature of the world, in a way
+but it is all we really know how to do
+(for now)
+Hahahahaha
+justin_smith: Agreed
+we have gone so far down that path, it is hard to imagine there might be another way
+Would be an interesting project to make a nonlinear algebra that works even when statements are not sequential!
+I might need to dive into some math, I feel like people must have worked on this before
+He called you forth to spake truth
+This is probably not what we are looking for: http://arxiv.org/pdf/hep-th/0609022.pdf
+but interesting nonetheless
+More like, non-sequential
+I have not, will check it out
+I feel like you should be on this list ; )
+33333
+Wandelweiser eh?
+What is their deal?
+So whenever you want to update him, maybe it will be a little more pleasant to have around
+Or not
+justin_smith: Awesome
+Well, you certainly have enough material yeah?
+Yeah exactly
+but that is a good starting point
+having a lot of things... then you can prune the best
+It is droney... I wonder if for an album you want to go breadth and have every track be as different from each other as possible? Or go with a theme and curate the whole experience
+Yeah, I agree. I like the album-as-unit... more of an overall story rather than a bunch of unrelated things
+Awesome
+How do you simulate a shitty network? Some kind of network fuzzing program?
+justin_smith: Kafka question: I have a consumer group with many consumers... do they all need their own partition?
+Or can they share one?
+I am getting contradicting reports on this
+Some say every consumer in the same consumer group needs its own partition, which seems weird to me
+So what if I have 500 nodes and want to distribute messages to all of them... I need 500 partitions?
+Okay, say I start with 100 nodes... so I have 100 partitions
+Then I add 100
+Right
+Then I go and repartition the topic to have 200 partitions
+Hmmmmm
+So if the consumer doesn't specify a partition, it gets assigned by kafka?
+I see
+that makes more sense
+So I don't need to claim partitions myself
+If I have enough partitions for all the consumers, they will all get one
+Right, it is all coming back to me
+Thanks!
+That is wacky
+quile: WTF
+Ahh, the second argument of parseInt is the base
+and `map` adds the index as the second argument
+So it is really passing two arguments to parseInt : P
+ridiculous
+Monday D
+justin_smith: No worries at all
+Glad someone is taking care of that guy
+It was a pretty fun event though
+quile: Great to have you by!
+dogoooo
+dogoD
+quile: That is an awesome idea
+He can be one of the Ark's AI computers
+"He evolved from an IRC chatbot into a full fledged sentient AI"
+Done
+quile: Ah! My demo sets are all out right now....
+I might have one back at that point though
+Hit me up before you go
+333333
+Now that's a reducer I can get behind!
+No true art lacks suffering
+justin_smith: Haha, when it rains it pours
+Enjoy it!
+justin_smith: Yessir I did
+Have not had a lot of time to watch movies lately, but when I do those will be the ones!
+Have you gone through them yet?
+Still can't wait to see Stalker... Roadside Picnic is one of my favorite books of all time
+333333
+333333333
+justin_smith: So your weekend went well then?
+That sounds intense!
+Hahahaha
+justin_smith: Ahh, are you going to anything?
+For some reason I signed up for XOXO fest... yet I don't really want to go : |
+I wonder if that means I'm getting old
+Thanks quile
+Really? Is it actually cool?
+Haha
+I mean, it will probably be fun
+A lot of talking to people...
+I would almost rather just jam out on the time travel game ; )
+justin_smith: Ah no, I have a game design experiment about time travel I am working on
+But that game is awesome also
+What are you doing on distsys?
+I have been doing devops for awhile now... so many servers and object store
+Oh yeah?
+maybe your kafka is clogged
+Ah, that is bullshit
+Fuck these dumb machines, I hate them
+Bad behavior
+It is probably thinking it is doing work
+infinite loop maybe?
+BTW, I will never stop anthropomorphizing computers
+I love it when they think and care about stuff
+so modest
+It is always an accident
+Intention is a great barrier to discovery
+How much of my life have I spent importing data into databases?
+Ha, what?
+Haaaa no! Hadn't seen that one
+Wow that music is awesome
+Would love to hear a whole track of it... or did they just cherry pick the best stuff?
+Yeah I just turned on five voices at once
+starting to get cooll
+Wow, that is a pretty amazing writeup
+Way to take an idea all the way
+Truly unfortunate condition
+Octagon city collides with reality
+Reality is not very friendly to Utopia, with its mosquitos, border ruffians and Thunderstorms
+Ha, awesome! Are you designing it I assume?
+Ah right, I just mean in terms of the noise part
+Or, is the metal itself the instrument?
+No electronics?
+AI see
+Cool!
+How long do you think it will take to build?
+Looking forward to hearing it ; )
+Got it
+Ha, literally JUST read that one
+Dude, I want to hear that
+Oh my
+333333
+I have seen that philosopher's game night
+I think those people should make a game
+Or maybe, I will make a game
+33
+Yo, awesome!
+Where is the show?
+Man, haven't seen that guy play in forever
+Right right, the end of williams glory
+Cool, I'll be there
+What time?
+Dude, sounds amazing
+You guys have a name? ; )
+So that is Thursday night then?
+Followed
+3333
+a3333
+Ha
+Lurking code...
+It is like the old zen koan: If broken code works, is it really wrong?
+Nice!
+Funny. There should be a name for that kind of queue vs stack error
+That is really weird actually... I feel like that is the real bug
+All collection operations on a queue should return a queue
+Well, just saying it's not a bug doesn't make it not a bug ; )
+I see the rationale, but in practice transforming collections out from under you is a bummer
+Interesting
+Right, I am saying that is an unfortunate choice
+Man, how many times to I map over a map and have to turn it back into a map
+I have been getting way into type signatures using scala... it makes a lot of sense to be able to declare what your arguments are and what they return
+And using type parameters too
+So you say "this takes an argument of type T (any type) and returns T"
+So you don't know what it is necessarily, but you know it takes and returns the same thing
+which is what would help here
+Agreed, I am loving the type system the more I use it
+It is a tradeoff of course
+but having those guarantees is really helpful
+You are in a state of always relearning ocaml : )
+Some day I will take the plunge ther
+*there
+Vaguely... what did he do?
+This is awesome
+Yesterday I played the same fugue 18 times in a row
+It was like a trance
+My mind gets absorbed and I am not even a person anymore, just timeless patterns of tones and resonance
+Then I am surprised when the song is over and I find myself with hands and features and stuff
+I know! Clearly he gets it
+A worthy goal
+DOGD
+DDDDDDDDDD
+DDDD
+Poor lib, victim of gravity
+Hey quiile! Long time no see
+Whoa, my i key is acting up
+quile: Oh man! Brutal.... food poisoning is no joke
+Oh no, I've triggering dogdog's joke subroutine
+Ah!
+Hmmm I don't know this one
+Hahahahaha
+Definitely
+justin_smith: Yeah! Planning on going
+Wait, are you telling me about a show before it happens??
+This may be a first
+Good to know
+Anything going on before you?
+Man! Restarted my computer a bit ago and forgot to fire up IRC
+What did I miss?
+quile: Yeah! I knew it....
+justin_smith: Oh yeah! I haven't talked to you about the show
+Hahahahaha
+There's your numberwang quile
+Dude
+Okay, what kind of ensemble?
+What is the plaaaaaaaaaaaaaan?
+Sounds awesome
+Has your group-without-a-name met again?
+No I have not seen one
+So it is played all through overtones I assume??
+That is cool man
+Living the dream : )
+Of course
+If you can just nail stuff down and actually do things you will be way ahead of most people ; )
+That is wacky
+Harpsichords... kind of cool, but lack *dynamics*
+Alright, headed to Sasquatch tomorrow, see you guys next week!
+333333
+Yes
+Hey, yeah! Link?
+Nice
+That is a good tone there
+I can hear it ringing throughout the world
+That is spectacular man
+All in is the only way
+It is like: this life is the only material we have to work with
+What do you want to make out of it?
+Clearly, you should be making music
+Let me know when the next show/rehearsal/event is
+justin_smith: All of these things! Though, cancer is turning out to be a tricky nut to crack ; )
+We are in full swing production mode on the game
+just got some physical proofs of our pieces.... they are badasss
+A miracle
+Learning a new fugue, from the second book
+Haven't spent much time on the second book, it has mostly been the first book my whole life
+There is one part where he starts the same theme twice as slow, while the original plays above
+Then there is another one where it is upside down and in major
+Then at the end, the theme overlays itself eight times, one on top of the other
+Like how in the firework show they just start lighting everything off at once
+justin_smith: I think given recent events, the time for the world to embrace harsh noise music has come
+This is your time man!
+Well, we can, but you have to go through 3 volumes of pain and suffering and strife before middle earth is saved
+Whoaaaaaaaaaa : (
+That is tragic, man
+Don't worry quile, luckily this doesn't effect the rest of the world...........
+quile: And I appreciated your election joke
+quile: Jodi and I are looking at options
+Yes!
+Let's figure it out, I'm serious
+I've always wanted to build a dome........
+This is happening
+Whoa, yeah!
+Nice man
+Are you getting any kind of payout on that?
+Who is acquiring?
+Aha, makes sense
+When does the transition take place?
+I see : )
+So, has anything changed? New manager coming in and making everyone write PHP?
+Tyrannical oversight?
+Wow, what office? Where are you now?
+Ah, good spot!
+Crazy man
+Congratulations??
+Good news
+Hahahaha yeah, that was always kind of a weak point at old OB
+*LB
+Hahahaa yeah!
+Snacks are key
+3333333
+3333333333
+33333333
+quile: Why implicits. Why??
+: (((((((
+Seems.... batshit
+Finally having to reckon with and understand them now
+and it is insane
+Yeah I have avoided them until now
+but a feature I am working on now kind of demands them (bunch of type level fuckery with HLists and shapeless)
+I mean, I am getting into all the cool type level things you can do now
+Did you see the guy who implemented the lambda calculus in the scala type system?
+If you wanted to calculate l-values during compile time........
+33333333
+justin_smith: Crazy!
+How does it sound?
+How does it play?
+Awesome
+Man, let's play some music!
+...... next week
+What is up with the group? (Annie and Stephanie (?))
+What does Kyle do?
+Ah
+Awesome
+Sounds interesting... I am a big fan of the harmonic series
+Worst case data mutation... that sounds bad
+Ahhh that makes sense
+Always wondered why
+Everything is a tradeoff
+Yeah, blowing up the universe is satisfying, but then you miss out on all of existence
+quile: Ha! Yeah... so someone already did that
+Well, I guess we enjoy the show then
+Actually, we are kind of part of the show
+We are the edge of an exploding universe!
+L
+O
+L
+Hey quile: you know the answer to this one? http://stackoverflow.com/questions/40754229/scala-gremlin-scala-hlists-poly2-rightfold-and-a-missing-implicit-prepend
+Current scala fuckup I am trying to figure out
+That's me man! This is my life!
+quile: No worries at all, I more shared it because after I spent an hour typing it up I reflected on how utterly batshit it is
+and wanted to share
+I have been getting into HList and shapeless... it is kind of necessary to do this feature I want to do
+and I have been learning a ton of stuff about the type system
+But also: it is maddening these opaque errors
+Of course, I would have been done long ago in Clojure.........
+Yeah, entirely
+I am starting to understand why they use implicits... it is a way to pass arguments on the type-level
+All part of this type-level programming
+Still, I hate implicit crap
+Basically they have hacked a bunch of haskell concepts (like type classes) into the scala type system with this convention of sealed traits, implicits and type parameters
+In a way it is cool.... in a way it is horrible
+Like: I should just be using haskell where this stuff is native, instead of whatever weird conventions they have to use in scala to get the same behavior
+It reminds me of the acrobatics people do to get a package manager in javascript or something
+Hackhackhack.... something resembles a package manager
+but it will still never compare to a language environment with a real package manager
+Man, seriously
+One more case supporting the benevolent dictator model....
+Now I want to go to Singapore
+Whoa!
+I did : (
+She lived a long good life, and created many amazing things
+May we all be so fortunate
+justin_smith: Yeah, I was into a Deep Listening phase at some point
+It really is pretty amazing
+What is this device you are talking about?
+Ahhh I haven't seen this
+Interesting
+That sounds awesome, I'll check that out
+I miss C++ from time to time : )
+Nice
+Or you could write directly in C++
+But probably screw something up
+Usually when they are generating code, there is a reason
+Yeah that is probably a big part of what the code generator is up to
+Hmmm.... where would a memory leak be coming from? Probably in the markov graph of tokens/parts of speech
+In other news, I just used the phrase "monadic coproduct" in a sentence and totally meant it
+I am worried for my psyche
+I know! I feel this transformation taking place... like a werewolf. This is how people become category goons!
+I just want to recast everything in categorical terms... my tea, the fountain outside
+It is sinister
+Soon I won't even write programs, just lattices of types that never evaluate to anything
+justin_smith: Would love to hear that
+What category theory book?
+Also yes: going to the OBR show tomorrow
+see you there!
+And yes, I feel some measure of resentment
+Though: it is very small
+Really I blame myself. If I hadn't taken this long detour down the world of programming I could commit my life to making music and maybe be worthy of being in that orchestra
+But probably not
+That
+is rad
+33333333
+AKA computer
+Hey man! Haven't eaten yet so screwed up my schedule... getting food soon so probably won't be going to dinner
+Also, I was planning on going late if there are other bands playing
+Or are there?
+The original is great too ; )
+Dude, hobos don't play viola at bus stops
+Funny to see those olywa guys again
+Jodi and Annie have a pretty amazing therapist who might help you out
+I have seen her as well, she is a pretty great lady
+333333
+quile: Message.... ah, right!
+Yes I did, sorry I got it then something happened, forgot to respond
+I have two tickets for tonight!
+Can't wait, looks amazing
+quile: I will come prepared
+justin_smith: Sounds badass!
+Brandon's ghost haunts many places...
+HAhahah that's fucked up
+quile: HOLY SHIT
+That was an insane spectacle
+And yeah, glad I sat in the balcony!!
+Whoa
+Also, was super high
+Which helped I think ; )
+So thanks for that advice
+I was kind of in awe the whole time
+Have you found the best recording yet?
+justin_smith: I want to tell you you didn't miss anything, but you totally did
+Sorry
+It seemed like these people were a kind of traveling show?
+The pianist and the whatever the hell that instrument is?
+Ahem
+Lots
+"No solid reality"
+"Only walls made of fluid"
+: (
+That thing was amazing
+It was like a pre-digital synthesizer
+Funny how different things were coming out of the different speakers
+It seemed so *versatile*
+But they patented it ... are there any being made nowadays?
+Or is it some musical dinosaur?
+33333
+Whoa
+justin_smith: Awesome! I'll check it out
+Classloaders... gnarly
+3333333
+Yeah! Always meant to do that
+Well, that equation is formulated as a delta, so it should be possible
+Ah wait, I was thinking of modularity
+Any performance improvements?
+That is awesome
+incremental betweenness hmmm... so you would have to check to see if the new node creates any new shortest paths
+I mean, the algorithm is trivially parallelizable, you can compute each node separately
+But it depends on the structure of the entire network, since it tracks all shortest paths through that node
+I'm not sure how you could get away from computing each shortest path again just thinking about it
+but there might be a way
+Nice, link?
+justin_smith: Hey man!
+How goes over there?
+That sound awesome
+I have been thinking a lot about audio programming again, mostly generating compositions
+This idea... I just need to take a year off and do this thing
+Nice!
+Sounds like my kind of new years party
+OH yeah?
+Definitely interested, I love that place
+Haaaaaaaa
+!
+Dude, that sounds amazing
+Okay, I'll have to check that out
+: )
+Yes definitely
+Are you saying Highrise was not explicitly feminist?
+Whatever that movie was awesome
+Alright well don't give away the whole thing
+I love it, thanks for the lead!
+Cool, so you will be by on Friday then?
+We can work through the Don Julio then : )
+Yeah totally
+I have been doing way too much stuff and am ready to scale back into hermitage mode again
+DOG
+Ha
+Even you yes
+Wow, what do you do with a torn rotator cuff?
+Is there some kind of treatment for that?
+We are such fragile animals
+333333
+Hey justin_smith: Funny jvm question you may know
+I have an uberjar and I can run some main class in it like so `java -cp ubercode.jar path.to.MainClass`
+But if the main class is in a dependency (from a library) it fails to find it with `Could not find or load main class path.to.MainClass`
+How do I run a main class that lives in a dependency? Or am I doing something else wrong?
+Seems weird
+Aha, just realized that.... the dependency was not included in the uberjar
+Total PEBKAC
+It was one of those things where I could almost smell the PEBKAC
+I knew it was PEBKAC, but not how
+Awesome!
+Should be fun
+You have the day off?
+Nice
+I took all my vacation in November, so I am working this week
+I think this is the first time I've worked in the week between xmas and ny since I got a real job
+It is kind of cool actually, no one is here!
+Man, just found out Raynes passed away :, (
+Tragedy
+Kind of weird when internet fixtures disappear like that
+For some reason I assume all the weird characters on IRC do not share normal human mortality
+Oh yeah? Always interested in that
+Not sure I follow
+Ah, I see
+Right, that makes sense.
+It sounds like something that should be configurable then
+Classic "introduce a layer of indirection"
+I guess the trick is identifying where that needs to happen
+Right, I can see that. Similar to the principle of least power
+which for some reason I have to constantly educate people about
+Everyone here is always adding javascript interpreters into data-based configurations
+Power is good! But messy
+It is that old adage of power: great power is knowing when to withhold it
+or something like that
+No, power is pretty cool. Nietzsche told me so
+justin_smith: I will give that a shot!
+Current status: yaml configuration with random js code in them!
+I have held it out of my project so far, but it is too late for things established before I got here
+I feel like it is a kind of laziness
+"We don't know how/don't want to implement the functionality that would take the data from this config and generate the behavior we want during processing, so we are going to shift that burden onto the configuration author and have them write code to do things our system should really be doing"
+Nice!
+Then run it over every jar in clojars and give them a ranking
+That makes sense yeah
+Cool, thanks for sharing!
+I am going to print out that principle of least power quote and hang it on my wall
+Hahaha a great service to humanity that
+I'll come back to clojure one day. It has been fun learning scala and all the type astronaut stuff.... but really the difference is either being effective or learning a lot
+I love learning stuff, but sometimes I just want to get things done and not spend three weeks learning about free monads
+Does this make scala > clojure on the Blub scale?
+I feel like I've heard people say similar things but replace "scala" with "clojure" and "clojure" with "ruby"
+Really though I feel like scala is just half-assing it and I should really be writing in Haskell or ML
+If only they had the JVM
+At this point the main dependency of the project is the tinkerpop api
+which is pretty a pretty badass interface actually
+I just swapped out our backend graphdb and didn't have to change any code
+I love it when design principles work
+A lot of people are getting into Go though... looks cool really
+Have you messed around with it?
+It is like C plus asynchronous channels
+I want a language with Clojure's native immutable types and concurrency primitives, Go's channels, Haskell/ML's type system and R's native vector/matrix operations, plus native graph operations
+Then I would have the perfect language
+Looks like I should get started on that
+Oh, and it would be homoiconic
+Oh yeah?
+Alright, I'm downloading it right now
+That sounds pretty badass
+I like the binary tree implementation on the home page : )
+That sounds like the way to do it, awesome
+Native graph operations?
+Dude, this dream of a `list : graph :: clojure : omniuberlanguage` is still alive in my mind
+Awesome
+Maybe I will write this language in ocaml
+Oh interesting, hg and darcs!
+That's how you can tell the language was invented before 2010
+Oh my
+: (
+GIL is why I can get away with dismissing python
+but that is more because I don't want to use python
+Which is for the best anyway
+jinx
+You mean leaner than this 200MB jar I just compiled?
+How is that possible
+Yes oh my
+That is a conservative estimate for the http libs btw
+Which reminds me: there should be some formalization of dependency management
+so that every new language doesn't have to reinvent it from scratch and screw it up in some (multiple) unique ways
+Yes
+Always always always it is some menagerie that grew organically into a bad pattern that now can't be extracted without destroying everything
+A blight upon every development environment
+Someone must have done a formalization for this
+It is in some paper somewhere someone has solved this problem
+but no one reads it
+When I write omniuberlanguage I will find this paper and implement it
+Followed
+3333
+Oh yeah?? How did the show go?
+Congrats! That sounds awesome
+I might be interested in that yeah
+Right, the nice warm fuzzy sound
+Nice!
+Sounds like a solid approach
+Yeah, csound is so cool, but it is an audio driver first and programming language second (or third, or fifth or whatever)
+Sounds cool man, I am interested in that
+333333333
+Too late
+Already working on my master torture cheese formula.......
+Okay all set. Now taking over the world
+Long time no see
+Hey quile! Welcome back man
+That seemed like a hell of a trip (from all the digital signatures it left behind)
+No worries at all! Totally jealous you were hanging out on the mother island
+Ha yeah, I can imagine
+Recovering now?
+Ha! Yeah good time to get back
+Well, at least you made it
+That was out of control
+There is still snow everywhere
+Basically it was a long soul searching journey into my inner depths... and lots of fugues
+Also, saw Alban Berg do the Dutilleux Whole Distant World cello concerto
+justin_smith: Awesome! Checking it out now....
+quile: Can't you tell? The greatness is exuding out of trees like syrup. The air is basically drugs now
+That is awesome
+333333
+3333
+Always a good thing to ensure dogodg
+You wouldn't want to release anything into the wild that wasn't broken
+Wow, wTF
+Wait, is someone still using caribou?
+Sounds dramatic
+Now THAT is sinister
+Hahaha I think smitho got to that one first
+Adjusting him for the current political climate?
+It is true
+He could weight them based on current events searches
+Oh man, I think you went too far there
+Haha
+quile: Is this a cathartic process?
+Awesome about the symphony! Just saw Kodo last night
+I guess its not really the symphony, but it was in the Schnitz
+It was pretty amazing man
+If you get a chance, it was truly spectacular
+Just the sheer athleticism of banging on those giant drums, whoa
+I would join you this Saturday but we have tickets for some other event
+quile: Hey, great to see you on Monday!
+Thanks for coming out
+Just learned another fugue last night, XXII in B♭ minor (book 1)
+Well, I've been learning it for a couple weeks, first time I played it through from memory last night
+It does something to my mind
+I wander around the rest of the day with a fugue simmering behind all of my thoughts
+Yeah!
+It is going on right now
+That may be true
+I have developed this new perspective on them, I see each one as a kind of transformation
+Like, the initial theme is where the spirit begins
+Then it travels through all of these different forms and circumstances, being continually altered and forged
+Until the final ending the theme is resounding but in a new context
+The theme recurs, but it is forever changed
+While learning them I can feel my spirit being reforged. It is beyond music.
+What the hell? How did he do that?
+Just got my ticket for Clojurewest 2017 : )
+You guys going?
+Coooooooooool
+Dude, that is my general thought process
+Happy birthday!
+These are amazing
+I want to live in the Avian Crouton Multiverse
+Ah, we finally know the identity of the simulators!
+Yes, I fear to enter that chamber
+But I must
+Ha!
+I will start integrating it into day to day usage
+Alban Berg biography would SLAY at hollywood
+Maybe they could make it a musical?
+333333
+Oh yeah?
+Ah! Good to know. Somehow I thought that was how it already worked (retrying rate-limited results)
+What??
+Could be... so you don't know for certain?
+Funny man! Love to solve that, though it is really weird
+That does sound like fun
+Glad to hear it is still enjoyable! I was worried after the acquisition
+they would try to make you rewrite everything in PHP or something
+Maybe F# is cool?
+Everything is relative
+So as harmonically distant as possible, at least
+Coding with harmonies is the future
+??? You should always be able to install xcode
+Either way, checking out Planck now!
+justin_smith: Ah, well true
+Are you avoiding upgrading just to stick it to the man?
+Ha!
+Man, you should see my Yak gallery
+Just last night I decorated three more yaks
+I love yaks
+If it weren't for yaks we would all still be clubbing eachother with splintery branches
+So wait, should I not be reinstalling all my emacs packages from scratch right now?
+Too late
+Dude, planck rules!
+Ha yeah, but having fast cljy scripting is awesome
+No such namespace
+So, apparently they are still working on it
+There seems to be: http://planck-repl.org/dependencies.html
+333333
+That sounds super fun
+Sport of the future
+333333
+33333333
+I wrote some planck this weekend as well! It is now my go to scripting language
+Haven't had to do that yet
+Ah I see... no incremental output?
+Probably because they don't have real system access in there
+Ah, well in that case it shouldn't be *too* hard
+I just mean evaluation is probably happening in a sandbox environment or something
+Right, but can you do any system access at all? ls? pwd?
+execute subprocess?
+Ahhhh I see. That is inverted from what I was thinking you were saying
+Yeah, it is still in its infancy
+That is the problem, making a prototype that proves the concept is easy, making a real system takes years
+All because of countless dumb details like you speak of
+I thought you were telling me that when you run a planck script, you can't see any output until it is complete
+which would be a much more serious limitation
+Communication is hard. You never really know what people think the words they are saying mean
+That is badass
+Man, is that crazy work on the fretboard to add those extra steps?
+I thought fifths was okay on the cello because of how much shorter the fretboard is
+(even though they don't have frets.... what the hell is that word again?)
+(neck?)
+True
+No, classical bass is in fourths
+Okay, I played a bunch of bass in school and it was always fourths, at least
+Ah okay
+Didn't know that!
+Hahaha the only way to watch romcoms
+Actually, I wonder how entertaining you could really make a romcom just by supplying an alternate soundtrack
+Lots of booze would be necessary
+Still rather watch Tarkovsky though
+Ha! Rad
+I always meant to do that as well ; )
+Once I got some time to learn enough java to do that right
+He didn't fix one of the main things I wanted to fix though.... the damn key should be a Comparable or something, not a number
+What if I want my keys to be keywords? Or strings?
+600% though, that is pretty good
+33333333
+Well that would explain everything
+justin_smith: Ah interesting, I'll check that out
+Right now I don't need libraries really, just happy to be able to process data etc
+but that will come up at some point
+Well, I suppose something needs to run the macros
+Right, macros man
+Maybe someday I will have a revelation and embrace them into my heart
+Right now I just value simplicity too much to mess around with rewriting my source code
+That is a sign I believe
+Maybe.... that sounds awesome
+Followed
+Given a md5 hash, can you generate a list of all possible strings that hash to that value?
+Well, you could iterate through every possible string and hash each one and create a kind of reverse lookup table
+No way. Smartest answer
+That is how I code everything: start with a generate-every-string-generator, then cast my program as a fold across this list
+Or the list the thing it generates generates that is
+3333333
+Hahaha that seems like it would be very satisfying
+Something about pushing things down the potential energy well
+That is a virtuous quality for sure
+Too bad the viola is so destructive : (
+Could it be redesigned? I feel like these instruments need some modern ergonomics updates
+Mappings are cool man, embrace mappings into your heart
+It might need a translation into something more concrete
+justin_smith: Just create a mapping in your mind between mapping and "overlay", or something
+I mean, that is kind of true
+"Use alexander technique to map alexander technique onto the applications of alexander technique!"
+Cool, good to know
+I'll check that out
+Hey so how fucked are YOU guys that s3 is down?
+Has LB just ground to a halt?
+So, would you consider that an obstacle in delivering service to your customers then?
+Hahahahaaaaa
+Sorry, couldn't help it
+It is kind of awesome, a good reminder of how much we rely on other people's infrastructure
+Well, they probably will be after this ; )
+Dude, best way to be out of a job ever
+Don't worry, soon I will start protecting and hiding cancer to ensure I continue to always have a job, as role-modeled by every for-profit industry ever
+360 indeed dogdog
+Do either of you understand react?
+Trying to figure out this one: https://github.com/bmeg/webpack-react-test
+quile: Does my reproducible example make sense to you?
+Do you use webpack also?
+justin_smith: Thinking about switching, might be able to make the case after this one : )
+quile: Oh yeah??
+No refs?
+Okay...... what if I want to refer to one of the elements in the component? Just select by id?
+What is the idea behind that?
+(behind never using refs that is)
+Well, the example is the dumbest thing ever
+it is just a lib package with a component with a ref
+Then an app package that imports the lib package
+I intentionally pared it down to isolate the problem
+quile: Okay, so you are saying you never access any elements in your component?
+Crazy, I guess I can see the motivation behind that
+Everything should flow from state then?
+Okay, so maybe it is my use case then
+I am using things like d3 and cytoscape and plotly etc
+and trying to wrap them in react.... which as I say it maybe that is also some kind of react sin?
+justin_smith: Right, that is what I do
+Basically something like cytoscape binds to an element, so I have to refer to that element to get a reference to cytoscape I can use to draw with
+Okay, funny
+So why do they have refs then?
+Here I'll link the actual component
+https://github.com/bmeg/ceto/blob/master/src/js/ceto/components/schema.jsx
+Tell me how horrible this code is
+quile: Do you use any third party libs, or is it all straight ahead DOM UI stuff?
+Setting the ref: https://github.com/bmeg/ceto/blob/master/src/js/ceto/components/schema.jsx#L131
+Calling the ref: https://github.com/bmeg/ceto/blob/master/src/js/ceto/components/schema.jsx#L41
+Better way to do that?
+Okay, so you bypass refs by accessing the element through some DOM access
+I thought refs were preferred over `document.getElementById....` or whatever
+but I guess I am wrong about that!
+justin_smith: I think the benefit of a ref would be that you don't have to do a selector.... the element doesn't have to have a class or an id and you can still access it from your component
+quile: Okay, so don't use refs is the answer!
+Gooooooooooooood to know
+quile: Cool, I'll try that
+What specific purpose is that?
+Yeah I think the issue is that I am using these non-react based libraries and trying to get them to work with react
+quile: Ahhhh that is a helpful distinction
+So ref means: reference to actual dom node
+Did you check out the actual code I linked above? The one with the real cytoscape component, not the test component
+Basically I am trying to put together a slapdash viz library using react, maybe I need to just create all these visualizations from scratch out of svg nodes so I can use react how god intended?
+quile justin_smith: Well, this was illuminating. Thanks for the help!
+Dumb js h#$^*#$!&@(
+On it
+Sounds rough
+3333
+How are things around here? Just got back from a retreat at the coast
+Ah man, bummer
+Ah, that is a super bad time for it to be then!
+That is a recipe for one dejected parakeet
+Surely parakeet you can find purpose elsewhere in life?
+Hahaha is that not how you spell it?
+Don't do it
+Oh quile, BTW, turns out my webpack issue was that it was including two versions of react
+Well, here is the deal: when I package my lib, webpack packages react as well (because it is a dependency)
+So, you download the lib as a dependency
+and in its list of dependencies it finds react
+so downloads it and adds it to the project
+WTF???
+What kind of harpyshit is this?
+How am I supposed to do dependencies then??
+Like, how do I make a JS library in this backwards medieval age we live in, if declaring a dependency then imports it at every point along the dependency chain?
+Sorry that sentence took awhile to type
+So, you just don't include dependencies in libraries, just declare them?
+It should yeah!
+That seems like the sane way to do things.....
+But how could they be incompatible if they literally come from the same dep declaration?
+The lib declares the dep on react
+app declares dep on lib
+says nothing at all about react
+Yeah
+I have a repository that reproduces the issue in the simplest terms I could find: https://github.com/bmeg/webpack-react-test
+No, haven't heard of that one
+Oh okay, do you guys use webpack then?
+justin_smith: Yeah, so you can reference elements internal to your component
+Yeah it seems useful for interacting with blob-of-state js libs
+from react
+quile: Check out that repo then, it does the simplest thing with react and webpack and fails on the refs (because two versions of react are in the project)
+Currently trying to figure out what the hell to do there
+I'll check out Lerna
+At the moment extremely annoyed by webpack's model of dependencies if all this is true
+Yeah, it does look relevant
+This ecosystem is a total disaster
+Also, trying to look for any help on google is like trying to separate out different lineages from an archaeological dig.... most of the information is already out of date, and the stuff that works is hacky and experimental
+So weird
+Whoa, what is greenfield?
+Oh, hmmm. That is just for building
+Yeah, I did that so that app can depend on lib in the same repo
+quile: How could I do that instead then? It has the same problem when I `npm publish` it then `npm install` it in the app
+Sure
+Right, but the lib package has been compiled with webpack, so I assume it has a webpackified version of react in there
+What, packaging the lib with webpack?
+Right, that is what I'm starting to figure out
+But then how do I use webpack for libraries then?
+So you can only use webpack at the end of the process then?
+Webpack cannot depend on webpack compiled libs then
+Wow, that is super unclear
+I don't think I've actually read that anywhere
+Okay
+So how do I run the lib on its own then, if I can't include the deps?
+To test it etc
+Yeah, so include all the deps in the old way of script tags in the headers or whatnot?
+This is all so bizarre, I guess my expectations of what a package/dependency manager are do not align with what is happening here
+I am expecting it to behave in a certain way, but really that way does not exist in JS
+Ah okay
+I see
+justin_smith: Where is the movie? I have a call with my brother tonight, but if he bails I may wander out there
+justin_smith: Definitely thinking about dehydrating myself to skip the next few years
+Hey quile!
+Well, if by sorted it out you mean moved all of my components into a single file then yes
+You were correct btw
+I was trying to use webpack as a package manager
+but really it is a final step once everything is complete
+The thing I don't understand right now is how to release a regular npm package that I can pull into another project
+Right that is what I want to do
+Yeah, I have looked into that
+Right now we just have a lib and an app, but it could still be useful to apply
+Right! So what I don't understand now is how to release a regular JS module
+As in, how do I package a js project so that it can be pulled in as a dependency on another project?
+There are two sides: how do I package it, then how do I call it from another project
+and it has been devilish to attempt to figure this out, because each time it doesn't work I'm like "wait, did I package it wrong, or am I just trying to call it wrong?"
+Anyway, it is kind of a nightmare so I punted on it to get other things done
+Truly man, I can say as someone trying to get into the modern JS tooling, it is a freaking disaster to figure out
+quile: Yeah? Do you want to have a session on it at some point?
+I could really use some insight on it. I am stumbling in the dark really
+Aha, good to know
+So, is the problem I am trying to make a web library but using npm for it?
+Still don't really know what the problem is
+so weird
+Ah
+Okay, that might be my problem too. I don't know what is expected in writing a node lib
+There seem to be a lot of unspoken assumptions (or spoken 18 different ways assumptions)
+Right, I guess I am saying I don't know how to build a node module then
+I thought I did
+but then it doesn't work
+I am sorry too justin_smith
+Anyhow, yeah! Let's have a session on it, that would be rad
+Well, I suppose that requires you having some time at some point ; )
+This weekend open at all? I am going to a planned parenthood fundraiser Saturday night, otherwise mostly open
+Might be having some people over for games tomorrow night actually
+quile: Anyhow, thanks for offering. I got to a certain point where I imported my unwebpackified library and then none of my components could find their dependencies
+And I just started laughing
+for a really long time
+I think it is the sign of a mental breakdown
+Sunday would be rad!
+Yeah! Thank justin_smith
+*
+*s
+Whoa s key not totally working this morning
+Woooooo!
+WTF monday
+justin_smith: Awesome! Congratulatons
+If you have a commission then you are a real composer now, that is the test
+Still though
+Hahahahaha well joke's on that guy, I have a job!
+Hahaha I knew it was coming and it was still funny
+Yeah I saw : )
+So apparently functional programming is okay again?
+Happy Pi everyone
+Today we get to appreciate the timelessness of universal truths
+and the inanity of homonyms
+We should though!
+Totally celebrating e day
+so, April 12th
+One day February is just going to keep going and going...
+When time becomes exponential, february 71st will just come out of nowhere
+That is an awesome idea and the first executive order I will sign when I get into office
+The next will be to abolish dates and rewrite all history books in terms of seconds since epoch
+Who knew the secret to fixing zookeeper was hidden in the zookeeper namespace all along!
+Not dating an occordionist
+Never dated an accordionist as far as I know
+Although really anyone could become an accordionist, and maybe some of them have latent or since-blossomed accordion abilities
+justin_smith
+Hi to Alexis!
+I hope you have all seen this: https://aphyr.com/posts/340-acing-the-technical-interview
+Do you guys know of any examples of homoiconic languages that aren't a lisp?
+Ha
+I guess so!
+I mean, I would have to think about it more, but I think so
+How do you break it to your boss that they don't understand what a "fold" is?
+That is my usual approach, thanks for validating!
+I was wondering if there were something more elegant, but apparently not
+33333333
+Created a universal language to unite all humanity this weekend: https://github.com/prismofeverything/femto
+Just compiled a python function to femto then evaluated it in js
+Going to become a monk now
+3333333333
+justin_smith: Awesome! I will donate in that case
+justin_smith: Thanks!
+justin_smith: Just heard another person talking about PGP encrypted email.... time to revive this idea I think
+As long as I am converting everything in my life to metric, might as well set up encrypted messages while I'm at it
+Hey justin_smith, thanks for the key!
+Now I realized, it is on my machine at home
+first obstacle to the cryptosocial revolution
+Ah no I mean my key I made last night (my old one was expired)
+I have your public key because email
+Aha, I suspected I was not the first with this problem
+Cool, I will do that
+Also, I need to push my new key to a keyserver somewhere yeah?
+And, is there some kind of client for composing/reading messages?
+Or do you just use the gpg command?
+Ah right, I think I remember that
+Ah yeah, the show!
+Thanks for reminding me
+I'm not sure I am the solution for your transportation, but I will try to make it
+justin_smith: How does it work if you want to send a message to multiple people?
+Can you encrypt it with everyone's key in a way that a single recipient can decrypt it?
+That is kind of magic
+It is the real magic
+Doesn't everyone know your public key?
+Awesome. So, tell me how plausible this is: an irc-like system using kafka where you can subscribe to topics and all messages are gpg encrypted
+You would have to sign every message with everyone's key who is subscribed to that topic
+and people who joined a topic wouldn't be able to see history
+Right
+I'm not sure there is a way around that
+Right
+So, plausible?
+I am going to make this thing, it should exist
+33333
+justin_smith: Good to know
+That may affect Jodi suitability
+Cool, is it still running?
+Awesome, I was worried I missed it
+How was that last talk on Friday?
+Something about validating programs?
+Okay, that is cool if not immediately relevant
+How was the 40,000 messages a second one? Any insights?
+The physics one was amazing
+Ah yeah, I can see how for those applications you would need something like that!
+Are they using kafka basically?
+Sweet. Oh yeah! So I spent the weekend rewriting our application in clojure
+Aleph is awesome
+along with manifold etc
+I love that guy
+Ha! Sorry I missed it
+I was coding instead
+Did he tell you about his reimplementation of the core collections?
+that is what he was ranting about when I saw him
+Ah, that may be more effective
+Have you had trouble working with zookeeper directly?
+Ah yeah, it is a pretty explicit abstraction
+Right, awesome
+So kafka is the abstraction we want
+Nice, that sounds right
+So if you want to build kafka, use zookeeper
+Otherwise, use kafka
+Man, I am loving manifold
+I just took a pipe from the database, hooked it into a manifold stream, mapped a couple of functions over it and got http streaming results for free
+Ha! Agreed
+There are those timeless libs that afterwards just seem essential and like they couldn't have been defined any other way
+That is the way to write code (if you can)
+I feel like ztellman writes all his code that way
+3333333
+justin_smith: (just got back from lunch, not sure if I missed other messages from you)
+Right, so replace all zookeeper stuff with kafka directly
+Hahaha it is surreal and true
+I mean, things were kind of crazy before, but now they have reached a whole new level of unreality
+33333333
+More fuel for the grumbly neckbeard fire
+So what is the general idea for a petri net?
+Wait, how can you push to master without running tests?
+Ahh I see, that is fairly awesome. So it is a mathematical model then?
+Or more of an engineering one?
+Like, does it have an algegra?
+I see, now I am curious
+*algebra
+Very interesting, going to do some research on that
+So you are making a petri net lib then?
+"There are two AADT in this model, one for the forks algebra, one for the philosophers algebra"
+This is hilarious
+Cool man, so then you are going to cast your system into a petri net description and run maths on them?
+Ah there we go. I was wondering how you were doing the analysis
+Right, you don't need to reimplement that, just verify your system
+Kind of an awesome project, let me know how it turns out
+Ah yes, there we go
+I only trust math now
+the only thing in the world that can be counted on
+Don't lie, you aren't sorry
+I was curious about that
+I have been wanting to make a neural simulation that incorporates timing of spikes
+do petri nets do timing?
+Hey justin_smith!
+How the hell is it going?
+Ah okay! So am I going to get to see this performance then??
+Let's go back to that bar and set up
+That sounds rad
+Totally down.... I have been looking at digital pianos actually
+Either way, let's jam : )
+Aha, giant blocks
+Always giant blocks.... though there is a risk of someone getting crushed
+There we go
+Then we can paint crazy stuff on them
+and rearranging them can be part of the performance
+Even when you are standing there, the little engines are whirling in frenzy
+That would be awesome, some kind of musical replication of the Pong experiments
+I have not. I did some osc thing but I think it was just directly with the messages
+Oh rad, I see
+Yeah a lot of potential there
+Hey quile!
+Long time no see
+How goes man?
+Ha, hardly
+just bandwidth limited ; )
+Yeah how is that going? How is premise land?
+Nice
+Good man, crazy
+Way too much stuff to do
+I get the impression that institutional computer departments are chronically understaffed
+Ha! Of course
+Good old poe's law
+There goes all my attempts at sarcasm (and extremism)
+That does sound like fun.
+When am I going to stop screwing around with all this other stuff in life and get back to audio programming??
+justin_smith quile: Do you guys have a good recommendation for a good hosting/server/vm?
+I have had this rackspace cloud instance for 10 years and I want to migrate off
+The rackspace thing has been fine, but it is about $25 a month and I know there are better solutions now
+Also, rackspace is kind of lame
+justin_smith: Some day man, you will be the next pop idol
+justin_smith: How do you feel that compares to EC2?
+I was wondering about just getting an amazon instance vs something like digital ocean
+Is ec2 OSX?
+I see, and what ec2 features are there that could be useful for hosting a simple site? Wondering if I need them
+Ah yeah
+Screw web control panels
+Hate those things
+Is that what you mean by "ec2 features"?
+No it will be a tiny payment portal, so we need a server
+Yeah totally agreed there
+Okay hmmm
+Cool, thanks for the perspective
+Sigh
+I swear, kids these days
+Dude, can't wait to hear it
+: )
+Yeah, I don't want software anywhere near my gas, water or electricity
+Okay, digital ocean set up
+AWS had just toooooooo many features for me
+Ha! Somehow that is amazing
+followed
+Followed
+Hahaha this guy is hilarious
+Juice DRM
+Kind of awesome actually
+"You are not buying a product, you are buying the privelege of using our product, which we can revoke at any time"
+justin_smith: I was just thinking this. We have lived long enough to see the trajectory of things.... and it is not going in a good direction I feel
+333333
+Really enjoying this paper: https://arxiv.org/pdf/math/0411418.pdf
+Pick any real number, the probability that you can actually construct it is 0
+I think I knew that, but never had it so clearly demonstrated before
+If you can't actually construct a number, how can you use it?
+I think I may be a constructivist and didn't even realize
+Something about code and incomputability and the halting problem really put these finite vs infinite arguments in a stark light
+Right!
+So apparently you can still reason about things that are provably unstateable
+That is a pretty cool trick
+I think this gets into the nature of the gulf between formal systems and things that can be thought/imagined by human beings
+Great Ramanujan quote: "An equation for me has no meaning," he once said, "unless it expresses a thought of God."
+reminds me of Bach
+Dude, that equation for 1/π!
+quile: Yes, I love that one, thanks for reminding me
+It is beyond comprehensibility I think, which is part of its charm
+I have been working on fuga XXII (b-flat minor) from WTC book II for over a month now.... I am a different man from the one I knew before
+(now listening to great fugue) What the hell time is this in? I think it is fractal time, I can't tell
+Themes will recur with extra notes in them, or fewer notes, what the hell
+Truly
+Ah there is a transcription?? I was just plotting how to get a pipe organ
+Hahahaha but how could you get anything else done?
+Well, sweet man. I was just wondering where the hell to go after XXII
+Nice, listening now
+justin_smith: Yeah! So do I get to hear this performance after all??
+Congrats man, just let me know details (unless I was the jinx, in which case tell me nothing)
+Nothing wrong with that
+Flaw in option 2: "finding some way to deal with the loud fan noise"
+justin_smith: It is the soul's uncontainable yearning for the infinite
+Then you should do more of that
+I am pretty certain I would enjoy playing with convolutional reverb
+Paths are converging on working on the endless music generator as my next large life project
+I just need to see this board game thing all the way through (delivering in June/July)
+then I am open for musical creations. Just about making the space
+quile: What is the issue?
+Was just thinking about buying a house ; )
+!!
+So you own the sidewalk??
+I did not realize this
+Any casualties?
+Right, that is annoying
+Hey quile: In other news, do you want to jam on some JS tomorrow night?
+I basically punted on that issue and just put all of my JS in one file
+with the idea that I would fix it someday
+And yet, time continues to pass and I can't seem to bring myself to reapproach it yet
+Okay, great fugue sheet music acquired (thanks to the wonders of modern day printer technology)
+3333333
+I think liquid crunchy ganglion could be delicious
+https://docs.google.com/document/d/1lFFW0AtnWVto8zpfDAQYU1DCIcYVE0t5PgbjYG4FEXI/edit?usp=sharing
+https://docs.google.com/document/d/1lFFW0AtnWVto8zpfDAQYU1DCIcYVE0t5PgbjYG4FEXI/edit?usp=sharing
+Can't wait to hear this thing in action
+333333
+That looks like of rad
+I went and saw wildflowers on tabletop day
+*kind of rad
+shifting priorities
+Worst three word poem yet
+Interesting, so my work machine woke up for a minute?
+How does that happen?
+That was quite a run
+I am less good at this game
+: )
+I would be very interested in such a talk
+That is a slide right there
+Alright quile, it is happening. I am learning the Great Fugue
+2 pages in so far, it is bonnkers
+Though I will say, compared to the WTC stuff it has WAY less key modulation
+Which I actually kind of like
+some of the WTC stuff it will modulate like 8 times in two measures
+which can be fun, but it is kind of refreshing to just play in a key for awhile
+Ah right, that is the difference isn't it
+WTC was proving a point
+He was saying "even if you are tuned to this key you can't play this song because I modulate three keys away"
+Oh man where did that patchwo__ guy go? What a bastard
+Never has a tree been more fit for extermination
+That is madhouse
+Are you guys still token pooling?
+That sounds right
+Glad you worked that one out
+Hmmm it seems like my work machine is unnecessarily active when I am not there
+3333333
+33333333
+333333
+So you are playing jazz then? Or is this the bass show you were going to do last time?
+justin_smith:
+Nice, are you playing right at 8pm? Or is that when the whole show begins?
+Ha, yeah I had shut that out
+Pffff
+Cool I'll look it up then
+Nice!
+I assume you were doing this manually a lot? : )
+Just wait for the endlessly unfolding prism to appear
+333333333
+justin_smith: Ha! Actually, that should be how all defns work
+That should really be a language feature
+quile justin_smith: Hey guys! Suddenly it is my birthday tomorrow.... didn't realize that was happening
+Either of you want to come by tomorrow night for some chill ass mild celebration?
+justin_smith: Hahaha no not at all
+Probably around 7 I am thinking
+It will just be you guys and annie I think (though I am reaching out to Max as well)
+Just want a small quiet thing, no large event this year : )
+quile: Awesome, no worries about lateness
+Hey guys, awesome to hang out last night! Thanks for coming out
+3333333
+333
+333333333
+33333
+justin_smith: That cover is badass
+That is how I imagine programming in my mind
+Hahaha justin_smith: the importance of naming
+The trick is to exceed the actual reality of the thing by one order of magnitude
+Like "neural network"
+Yeah, just call it reality
+"In this computer, I am creating REALITY, something most of us will be witnessing for the first time!"
+That sounds awesome, link?
+Haha I love the metaphor man : )
+Don't listen to the haters
+3333333
+Ha! Those are amazing
+3333333
+Horrible
+3333
+33333333
+quile: Thanks man! They are a lot of fun to write
+It is kind of funny, never threw a KS to do that stuff, but it turns out to be pretty fun
+Thanks for backing!  : )
+Very soon now
+33333
+3333
+3333333
+Hahaha good stuff!
+Did you pen that yourself?
+Missing something about scrounging bitcoins out of the mattress or something
+Watching infomercial TV in your VR world, looking for bitcoins in the virtual cushions, microwave glitchcorn, something something
+justin_smith: I have a coworker who is encountering subtle timing issues while trying to construct a distributed system, and I thought of you and your rants on this topic
+I suggested he use Kafka to synchronize everything, but he seems determined to not accept any additional dependencies
+he wants to "keep the binary small"
+I thought about inviting you in to consult with the guy ; )
+justin_smith: Thanks, I'll pass along the advice : )
+justin_smith: Really looking forward to this show!
+And thanks for the quine/borges connection
+As for Max, I think there was an email I sent to both of you ranting about some vaguely defined notion in the middle of the night
+but if you don't have that I can send a new one
+I just replied to it
+justin_smith: I am totally down for that
+Want to go into the woods tomorrow?
+I am thinking about taking the day off
+3333333
+Hey justin_smith: might have to take a rain check on the walk today, lots of work to do
+could be open tonight however
+justin_smith: That crazy movie looked pretty good, where was it playing again? (I don't have IRC history)
+Ah yes. Are you still thinking about going?
+Okay just checked, it is actually on their site
+Yeah I would be down for dinner beforehand
+Let's do it
+Ah, I just went straight to clinton street theater: https://cstpdx.com/
+Yeah churchoffilm.org looks dead to me
+Or at least, delayed
+These things happen
+Apparently all information systems are not in perfect synchrony with one another
+Cool! It's a plan
+What is the place to go?
+I used to hit up Savoy a lot, before I started trying to lose weight ; )
+Have you been to that hawaiian place?
+Night light is good
+Night light it is
+quile: That is a badass suggestion
+Yeah I feel there is a general sluggishness in information propagating from the world into our arbitrarily constructed information systems
+There also seems to be some manner of warping or distortion as well
+Funny, I'm in here twice
+justin_smith: Which night are you going to CMG?
+Cool, I think I am down to go with you. Let me know what time you are going! (looks like it starts at 3?)
+Awesome, thanks for the link
+Wow, that is a great talk
+Kind of amazing in its simplicity, though running every query through from the beginning of time may get tiresome after awhile....
+Cool for global stuff, how does it work for tiny simple queries?
+I guess you create a db as a projection of the data
+Yeah exactly
+So you keep one sequence/log for all time, but you don't interact with it directly, you interact with its projections
+Kind of awesome idea
+BRB rewriting my whole application
+So basically, you run Kafka on never-delete mode
+It does simplify a lot of things
+Ah haven't gotten that far
+but yeah makes sense
+Sounds tricky ; )
+quile: Just got to page 7 on the Great Fugue
+it is pretty magnificent
+Hmmm interesting
+3333333
+33
+sounds painful
+333333333
+Sounds good! I have plans tonight unfortunately or I would go
+333333333
+3333
+C is great
+something timeless about it
+I kind of miss it at times, though that could just be background level nostalgia talking
+I have taken your advice and started learning about audio in java
+specifically, the sampled stuff
+I think C is another level there
+That seems wise
+Just always pass by reference
+Ha!
+I feel like you can't really program C unless you embrace mutability, but I am open to be proven wrong on that
+Or, if you adopt FP sensibilities and never modify your function arguments, it doesn't matter if everything is a reference ; )
+Ah yess
+Definitely don't share data between threads, that is just madness
+IPC is good
+Simpler times my friend
+I mean, using IPC directly is not simple necessarily, but in a way it is. We need new words for this
+Simple == no abstractions vs simple == easy to use
+Ah that sucks. Does csound do GC or something?
+Probably some kind of buffer cleanup routine
+Exactly
+I like creating abstractions, not using them
+That sounds badass
+I'm going for moderate abstraction with java sound
+but I like the hard metal approach. You will probably have to solve many incidental problems.... but it will be a great journey and you will probably end up with something better if you persevere
+Ah I think I've seen this thing
+It's like if you zoomed in super far on a monitor
+That is why iteration is so powerful. At each step, you have a working system
+Awesome, wait the 26th....
+So NEXT wednesday
+I think I can do that
+Yeah, then you can be as ambitious as you want, and still have a workable system when the deadline arrives
+Looking forward to it
+Hey justin_smith: would you be interested in a profiling session where you show me the secrets of profiling?
+I have a good puzzle for it
+33333333
+justin_smith: Sweet! That sounds good, let's do it this weekend
+THanks man
+How does Friday night work? Too much after work?
+I could do it Sunday during the day also
+I could also do it Saturday by rearranging some things
+Cool! Sunday is good
+(sorry computer failed there for a minute)
+Yeah let's do that. We can even get some lunch beforehand or something
+Alright will do
+Well, I have many of those
+Still doing open source these days
+I'll see what they say
+33333333
+Link does not resolve
+Though, good to know you are using nginx ; )
+3333333
+Pffffff wow, good question!
+Fugues upon fugues upon fuguesssssss
+333333333
+333333
+3333333
+333
+3333333
+I feel like I've gotten that one before
+Or maybe I am just in a state of perpetual deja vu now
+That may be true actually
+I feel like I've been in a state of perpetual deja vu before....
+Hey justin_smith: good to hang out yesterday! Thanks for coming by
+justin_smith: Do you know when you are going on on Wednesday?
+I want to come but I don't want to just hang out at Twilight for hours
+Well, I am close enough
+Maybe give me a heads up when you know, I can just zip down there
+Sounds itchy
+Dude, think if you had that thing on your >>face<<
+3333333
+Right on man!
+So if you let it slip back over that weight do you have to pawn it?
+Or is it more of a ratchet?
+Ah, that is a good thing to know about yourself
+I was thinking of it in purely logical terms
+Also, the wifi here suxxxx
+Yes I see that
+I have a network of my own right now ; )
+Sometimes it works
+Right on, it is funny how hard it is to figure out how to get yourself to do something
+Seems like it would be more convenient if everyone was born with an iron will
+*iron discipline I mean
+Hahaha well I guess there is that : )
+Maybe that's why
+I know some people like this
+333333333
+Oh hey man, yeah! I was stoked on the music
+I was just kind of upset that guy cut you short
+Oh really?
+Man you could play for 45 minutes
+Seriously, I was just getting into it. I thought it just started
+Ah okay, there was a lot of confusion at the end there
+Maybe I was triggered because of what happened last time as well
+Okay, well this is why you go out and do things. So many lessons every time
+Performance is its own kind of practice
+Hmmm I wonder if that is it? I think there are many possible emotive spaces noise can inhabit, are you usually approaching it with a specific one?
+That would be awesome. Seriously, the craft is there, I think you just need to perform all over the place
+Yeah! Go on a journey through the emotional space
+Instead of a point make a path
+Well, that seems like a worthy activity : )
+I think your mindfulness practice will help here
+I think if you relax and take time to inhabit the spaces you create it could go to interesting places. There is no rush
+Looking forward to the next show, when is that?
+Awesome
+3333333333
+33333
+Oh nice!
+I haven't gotten to spend much time with her, but the encounters I have had were very positive
+33333333333
+Very dangerous
+Oh yeah? Awesome man, glad to hear that
+How long was the show?
+I find it is a constant practice to actually inhabit the time and space I find myself in
+Sorry I missed the show, was out at the ocean this weekend
+Sounds rad!
+Ha! : |
+Ah, where was the place?
+I don't know man, I can't deal with that saxophone
+Right, but doesn't Brian play sax?
+I thought he was the sax guy
+Ah, different Brian then
+It is
+One step down from Saxophone
+Hmmm I don't know that one
+Seems like I missed a lot of things this weekend!
+Oh yeah! I think I know which girl you are talking about
+she was a badass
+So is Niekrasz back in town now? Or is this another of his tours?
+The problem is you have these brilliant people who ruin the instrument for everyone else who tries to emulate them (guitar and sax)
+Cool, I'll check it out when I'm not at work
+33333333
+Sweet, glad you captured it!
+I will give it a listen today
+That is an achievement
+Not yet no
+Ah, it is a movie?
+I thought it was some kind of novelty application
+What is the idea?
+Oh yeah! That thing
+Didn't know the name
+Crazy
+Can't tonight, though let me know how it turns out
+Hey justin_smith: Did you check out the Jodorowsky last night?
+Haha yeah!
+Okay good to know
+Will do
+I do KWYM
+Alright, I'll probably head out next week if you want to see it again
+Ah, how is that working out?
+quile: Great fugue memorized, now I just need to play through it 200 more times
+Let's jam next week : )
+justin_smith: Do they make phones that aren't vendor locked yet?
+Oh yeah? I am interested in that
+I have an S5, but I hate the verizon vendor stuff
+I just want a machine I can do anything with, this spyware bums me out
+Hmmm that is not a bad idea
+Have you tried any cyanogen stuff before? It seems kind of hairy last I checked
+Oh yeah? Hmmm I may give that a shot then
+My only hesitation is that it seems like something you have to get way into, ie know a lot about phones
+I'm not sure I want to know anything about phones
+Weeeeeird
+Yeah that stuff just seems annoying
+It is like all these specific details that generalize to no other area
+I'm sure there are general principles, but mostly you are dealing with dumb details
+quile: Rad! Yeah it is quite a piece
+justin_smith: What do you mean by "mandatory google bs"?
+quile: Kind of amazing. Did you know the theme was based on an old Dutch folk tune?
+Apparently it was issued as a challenge during a job interview as organist for some giant church to test his improvisation abilities
+justin_smith: Yeah screw all that. Cool, thanks for the lead! I will check that out
+quile: Yeah they were like "What can you do with this theme?" and Bach said "Great Fugue for all time"
+Love it. Though I think Jodi may be going insane from hearing it over and over for two months now
+Yeah? I am kind of into the idea. Really weird how phone "culture" has evolved into these locked down pseudo-devices
+Right, which is totally at odds with what is good for consumers
+Weird how incentives put us at odds with the companies that are supposedly creating products for us
+Almost like the system itself is flawed....
+justin_smith: Are you using the "project fi"?
+Or did you just swap in the simcard from your galaxy?
+33333333
+Hey justin_smith: Did you still want to see that movie again this week?
+Sweet, how about tomorrow night then?
+Hmmm wait, it is only showing on Thursday night at 7:30
+Ah yeah, I remember her
+Not that I can see, but I acknowledge I may have failed some basic internet test
+Can you do Thursday then?
+I think I can swing that
+Hahaha good plan. It is good to know something of yourself
+Awesome, looking forward to it
+AH nice. Welcome to the world of in ear headphones ; )
+I have the BOSE noise canceling ones
+I do a lot of walking for my commute, really nice to shut out the traffic noise
+Oh yeah? Haven't heard that one
+I bet there was some kind of feud between two people at some point
+quile: You able to hang out tonight or tomorrow night?
+Totally. Cool, let me know!
+333333333
+Ah awesome, good call
+Appreciate that
+That is kind of badass
+Ad hoc dropbox
+Yeah but then you have to have a dropbox account
+3333333333
+Ha! Sweet. It's on
+Dude, see dogdog's most recent 3wp!
+You are smelly naked music
+justin_smith: Hey man, awesome movie! Thanks again for the ticket
+This sounds a little like the curse of perfect pitch
+It seems lke a gift but really it just makes you see how wrong everything is
+Right! Reality is fairly brutal and unforgiving thing, I think that's why people are seeking refuge from it all the time
+They want to be swaddled in fantasy and told everything is okay
+Right, so if you can master things to satisfy even this level of fidelity you know you have achieved etc etc
+You guys have plans for the eclipse?
+Apparently the place Jodi is working (Washington school on Stark?) has roof access
+thinking about heading there
+quile! You able to hang out at all this weekend? I have a new prototype for you as well ; )
+This one may actually be playable
+justin_smith: I used to listen to those on repeat during the beach house days. I think they made it into my bones at this point
+quile: No worries! Totally understood
+Let's try for Sunday night then
+if that is doable for you
+I have some plans tomorrow night
+3333333333333
+Those are my favorite kind of tautologies!
+Is it also self-referential? That might be the greatest 3wp yet
+That does sound kind of amazing
+It sounds like Alice in Wonderland done right
+Hahahaha
+Like all things deserving of love, induces nausea
+33333333
+I think I spend more time with headphones in that not
+Totally, unlike these iron-maiden spike-teeth bose I endure
+Actually, the bose are pretty nice too
+333333
+33333333
+Are one of you guys burning something? Kind of smokey out here
+It is like regional dandruff.
+Those are all of my favorite places to go burning right now
+I think I am feeling actual mourning for trees and small woodland creatures right now
+justin_smith: No way! That is some worthy work right there
+I have long dreamed of getting a cello specifically for that reason
+Ah right, nice. Yeah I have always avoided cello because of how much it is supposed to injure you
+That bass is broken until I fix the action
+which I have been meaning to do for apparently years now
+I do have a great violin! Man, I need to learn that thing
+I spent some time with it a few years ago and got somewhere, would be fun to break that out again
+It is a lot of painful work
+but so awesome once you get it down
+Ha yeah! Well, if you are looking for terrible waveforms you couldn't do much better than a violin/viola
+I believe in the power of iteration
+That is awesome
+Thanks for sharing!
+33333333
+Better than an omnipotent fowl bear am I right?
+justin_smith: Did I see that guy?
+It rings a bell
+Awesome! Keep me posted, I definitely want to see that
+justin_smith: I will have to give the ZTellman talk more attention, I started it at work and wasn't able to finish
+They had recorders though yeah?
+Or something like that
+I expect the temperature would be around zero
+As far as the Shosty quartets go, I switch back and forth between the Emerson and Fitzgerald
+I feel like the Emerson really gets the spirit of the thing, but the Fitzgerald is so rich and powerful
+Ah yeah, love those guys. Recording quality is the only reason I don't listen to that one more
+That and the Beethoven quartet are amazing but the graininess sometimes spoils the immersion
+Totally
+Maybe I am just spoiled on modern day fidelity
+Right! That is a funny sensation for me. I think too much fidelity is almost a curse
+jinx
+So apparently I am just an auditory goldilocks
+I think that is wise
+Putting on Borodin to heal my wounds
+3333333
+: )
+In before loin octopus is a worldwide phenomenon
+Hey justin_smith! How did the show go?
+Fuck yeah
+That sounds right
+Did anyone record it?
+Yeah like video for the masses, doesn't need to be pristine
+I'm interested in Shosty!
+Seattle symphony is pretty good, I saw some great Mahler there before
+Dude did the mindfulness thing work for the show? Were you able to inhabit the spaces and let them happen etc? Or did you just freak the fuck out?
+3333333333
+Good to hear!
+333333
+333333333
+Ouch man why are so many 3wp thinly veiled descriptions of medical conditions?
+justin_smith: Thanks!
+Good to be back
+How are things around here?
+Nice! Does it carry along with it some measure of satisfaction or enjoyment? Or is it some kind of perverse self-flagellation thing?
+Yeah life has been crazy
+Really enjoyed our jam out session at the wedding ; )
+Well, that just means you are on to something
+Yeah, awesome!
+I am doing this with drawing right now
+I suck so bad
+It's all the journey my friend : )
+Looking forward to playing
+If you want to do some simple piano/viola stuff I would be totally down for that
+Okay well, whenever you are ready then, just let me know
+It was good! Lopez island is super sleepy and beautiful
+Like, the whole island is almost silent
+Not a party island (which is good for us)
+They are not really welcoming tourists, I think all the tourists are supposed to go to Friday Harbor
+Yeah we were just on Lopez
+Explored the whole thing though, pretty awesome
+Ha congrats!
+I'm glad you found a system that works for you
+No shame in bribing yourself
+quile justin_smith: Yeah! Celebration is called for
+Let's get some lunch this weekend perhaps? Would be great to see you guys
+Also, I could have to guys over tonight or tomorrow night
+*you guys
+justin_smith: Oh yeah?? I am going to that show!
+Are you actually in the orchestra?
+Let's do tomorrow night then.... quile?
+Also, Jodi and I are splitting up and I haven't really had anyone to talk to about it
+usually I talk to Annie about this stuff, but I haven't wanted to disturb her new wedding happiness
+Maybe let's hang out tomorrow night then? That would be awesome, thanks man
+If you want to come by we could just jam out or whatever
+Thanks man
+About two weeks
+pretty much right after the wedding
+We had a fight at the wedding and it was pretty much the final straw for me
+That is a good call. I'll see how I do here
+Oh yeah! Did you get to hang out with that guy after the wedding?
+I'm not sure about tonight, might want to keep it low key
+That is a good question
+Some kind of dinner would be good
+I was just going to invite you by the house if you want to do some music. Or I would be down to wander around the streets as well
+That sounds awesome
+How about 6? I should be home by then
+Ah yeah, 7 is great
+The FOMO is real
+Don't worry we won't do anything cool
+It does make me think of creating some kind of FOMO-wheel to harness the power of FOMO
+It is a powerful force but difficult to couple to an energy-generating process
+3333333333
+How is sweaty gravity selected? How does viscosity, density, salinity etc relate to survival fitness?
+justin_smith: Yeah man, it is kind of amazing
+They all say "look engineers can build bridges what's wrong with you people"
+But this is like building a bridge that is also moving and shifting and needs version updates and the queues get full etc
+justin_smith: Oh yeah? I might join you if you think they wouldn't mind
+Also, you usually have to change the design five times while you are building it
+justin_smith: Ha! Not really
+But I am down to go to weird parties on Halloween
+Halloween is I think my favorite holiday.
+Identity is made up every day, but Halloween is the only day we collectively explore that idea
+The Jerboa
+: )
+Try with 1 first
+Ha! Did I see that show? I don't remember it
+justin_smith: Awesome! Link?
+Yeah!!
+Sweet man
+I am down for any and all master plans
+3333333
+justin_smith: Wow man, that is some serious commitment
+Now for some occasions to record
+Dude, you should take all your riches and buy a plot of land to record on next
+Next weight goal
+Aren't you only in the owning class if you make other people pay you for owning stuff? I think it is okay to have land and build a dome etc
+I thought it was about power relationships in general, not just owning stuff
+Got it
+I didn't know you felt that way
+I see, that makes sense
+Ownership is a pretty weird concept really
+For me I just want a dome
+with a giant organ in it
+Really?? Did not know that
+quile: You are the problem man, all the ills of the world I just tell people "All quile, he did all that"
+justin_smith: Awesome! Sounds like a great project : )
+When are you going?
+quile: You know, *that* way
+Nice man, practice is a magical thing
+333333
+Ah rad, would love to hear iit
+Sorry to miss the show, how did it go?
+Oh shit
+Hahahaha denial is a powerful thing. Come on man, don't force reality on people I think that's impolite
+Leave us to our delusions, it's all we have
+Are you antimillenial? You know phone is source of life now, and more importantly, meaning
+It is funny, most performance is poesing
+It is rare to find a performer who performs truth instead
+Still, the show sounds badass
+I think we should record everything yeah
+especially since you have the gear now
+333333
+Is there any other kind?
+3333333333333
+Please do
+Man story of my life
+Might end up reviving caribou here, at least the model/sql part
+Still relevant apparently
+really the biggest problem with that codebase is all the dumb config stuff
+I just need to take an evening and fix all that
+then this thing will be ready for the modern era
+33333
+33333333
+Highly adaptive for certain environments
+333333
+Is there any other kind??
+33333
+Well that really takes all the fun out of it I think
+Hey justin_smith: do you use protocols much?
+Having a weird protocol issue, not sure I am using them right
+quile: Yep
+I think I figured it out
+I tried to put implementations into the protocol also
+Hey nice!
+What are you doing?
+That is rad
+Perfect use case
+Currently building my own data pipeline
+Are you modeling it as a dependency network?
+Or DAG or whatever?
+ 333333333
+Nice, I will check it out
+Those Madagascar people are astounding
+Yes, I think they have a plague going on as well right now
+http://www.who.int/csr/don/02-november-2017-plague-madagascar/en/
+No it is actually a plague
+I know the internet gives all facts an air of unreality
+quile: Oh yeah! I remember learning that. So somehow they made it all the way to Madagascar in their boats
+I can only imagine how many were lost
+It is such a depth of complexity that is so alien to our whole musical tradition
+I seriously can't even log into facebook. Every once in awhile I try and comment on something.... then I feel bad about it
+I can't even define what my issue is
+just an overwhelming sense of existential dread
+justin_smith: I see how you use it for good
+weird I can't bring myself to do the same thing
+justin_smith: Maybe that's it!
+Maybe I just need to clean out all these "friends" who I don't even know really
+I might try that, because I am starting to want to be connected into all the music stuff around town
+and it seems so much of that happens through facebook
+I am just going to start muting all these people
+Yeah man! You created your own curse there
+Your headphones are higher quality than most recordings now
+There needs to be some kind of synchronization between these two trajectories
+Yeah! The magic of practice
+That is how notes become music
+I love that process actually, it may be the primary drive
+quile: If you want to switch for a day we can arrange that
+quile: No man but I will for you being able to practice ; )
+: )
+Alright then
+Maybe trick them into loving piano too? Then you can all play together
+There it is : )
+Oh man unfollowing all these people feels so good
+I might actually use facebook after this
+Only posts from Justin Smith
+So if I just say "add friend" it will follow them, or is that a special operation?
+I feel super dumb asking this question
+Okay, that looks much better
+Nice, okay timeline looking more like something I care about now
+333333
+333333
+33333
+justin_smith: Awesome application of the rhythmic ratio, I'll have to set that up
+What I want is to get a listenable song that follows the 60-circle 3/4/5 so I am not listening to a metronome : )
+Yes indeed
+We should design the ultimate polyrhythmic metronome
+That sounds like a fun project : )
+I have actually, sounds like a cool problem
+though these things always depend on what your preconception of "composition" is
+Trying to apply music theory like rules kind of misses the point
+I heard that!
+I will have to visit at some point
+Amen my friend
+Really it is just a collection of rules of thumb that people have canonized as law or something
+Yeah, we should have an intervention where we discuss the impact of the choice of compositional model
+Man, everyone just wants an anchor so that they know their creative endeavor is *correct*. Of course this is impossible and wastes much time and energy
+Ha!
+This happens in the board game design too, where uninformed designers-to-be pick from a smorgasbord of "mechanics" and cobble them together and think it is a game
+justin_smith: Oh yeah?
+Ah the blade, the universal symbol of action
+I like your mythos, I am sure it will continue to develop
+That makes a lot of sense actually
+That's why they start kids on those rainbow xylophones that only play right notes
+"right"
+Eventually if you continue to sharpen your musical theory you end up with Physics
+just checking
+I think the rules are good
+Yeah why not 5wp?? Fight the power!
+(not really)
+Awesome
+Well that explains my prediliction to Bach
+Or vice versa
+C++ is Beethoven, Java is Brahms, Python is creedence clearwater revival, and Ruby is those weird generative nursery rhyme vidoes that have taken over youtube
+Shostakovich is just bleeding into your computer
+Yessssssss
+Have you guys read this? (especially quile as you have kids) https://medium.com/@jamesbridle/something-is-wrong-on-the-internet-c39c471271d2
+It is pretty insane
+The idea of using generative algorithms to automate the production of youtube videos is of course inevitable
+It is like the markov-generated tag cloud of videos
+justin_smith: Yeah well that would actually make sense, unlike most of everything else happening
+What I find amazing is who are these live actors making all these videos?
+It's like if we took a three word poem and made a video out of it
+Ah yes, good call
+It wouldn't even have to be a human, the markov generator could just make an API call to mechanical turk and a bunch of people are dancing about at the behest of machines
+Truly weird
+Dude, I love that stuff. So satisfying. So much at odds with the day to day frustrations that it feels almost like magic
+darcs!
+Thus is the insane potential ratio of effort to outcome that is programming
+Maybe the widest swing of any endeavor
+33333
+33333333
+Oh?
+Sorry to hear that man
+My place may be contaminated by alien virus
+It may be, do you know of any allergies you have?
+justin_smith: Nice! That crew is doing some pretty cool stuff
+quile: Right, let's do science on this
+3333333
+333
+33333
+33
+33333
+333333333
+Nice!
+3333333333
+Ha! Nice story : )
+justin_smith: Welcome back man!
+How was the trip?
+quile: I want to hear these improvised fantasia's "like liquid fire"
+3333333
+Quite a feat in this day and age
+Well, we are slowly covering the space of all possible sentences in this room. I'm sure we are not the only ones
+Someone is doing a "9 billion names of God" with sentences somewhere on a large scale
+Someone
+3333333
+An ideal we can all strive towards
+333333
+It's like we've opened an actual portal to this place
+33333333
+justin_smith quile: Okay how many bitcoins do you guys have?
+Hahahaha don't do that though
+Not saying it's not a bubble, but if you're wrong there is no limit to your liability
+Just saying, in case you are seriously considering it
+quile: I do
+Well, it is still yet to be determined, but it looks like the real deal
+quile: No I was saying "I do remember that"
+not "I do have bitcoins"
+I have exactly 3 one hundredths of a bitcoin
+just going to leave it there
+Ah nice!
+I have an ETH coin, really just for fun
+I am not an investor
+I know nothing about this stuff
+It really could go either way, curious to see
+If this were a real commodity that had some kind of real world corollary I would be much more confident saying it is a bubble
+but this could just be the historical point where the world realizes the value of non-forgeable non-government-controlled entities
+It is either a historical transition or a dumb tulip craze
+Who knows?
+justin_smith: I saw that
+Yeah it is pretty wacky actually, let's put all of our money in code/data form? I know how reliable code is in general....
+I did a little investigation and the bitcoin culture has basically built a religion around "HODLING" their bitcoins in the face of any volatility. Kind of a red flag I think, but once again I know nothing
+Oh hey justin_smith: Have you bought into spec yet?
+Nice
+I will be looking forward to trying it out
+quile: Yeah man, you see what I mean?
+It is kind of insane
+I think it might be the real deal, but I am not willing to bet all of my cash on it : )
+Actually it is back under 10k
+That is volatility for you
+justin_smith: Yeah I hear you
+It feels weird
+You do have a bit of that New England self-punishing puritan thing going on
+I do also, I think it is part of the cultural heritage
+I am coming around though
+I think the difference is that if I was in the owner class I would just try to make everything as cool as possible for everyone
+Hahahaha and many other things I'm sure
+The mayflower was only 102 people??
+I guess I didn't realize that
+justin_smith: Hahahaa
+I want to see that in action
+justin_smith: Question - do you have any mp3's of the recordings we have been doing? Applying for this artist residency and need some examples of work.
+You mentioned last night you had been going through them, just curious
+I might have some other things laying around as well
+No feel free, no rush
+Deadline is 15th of December
+It is something in NY that Caitlin sent me
+You live in this rehearsal space with instruments and other artists
+For a week or two
+No harm in applying yeah?
+I can't imagine I will get it since I have no real history or content, but worth trying
+It is the kind of thing I want to do
+3333333
+Hey how do you guys feel about a national strike?
+33333
+33333333
+33333
+I have systematic systems preventing me from getting my hopes up about this stuff until it is actually the real deal
+He was wiggled out of too many obscene things for me to believe this is the end
+Ah, so my cynicism fuels my optimism, and your optimism fuels your cynicism?
+I knew we were duals of some sort
+Hahaha no I think that is the burning node of harsh noise that lives in my heart plays that role
+333333333
+33333333
+3333333
+justin_smith: What are you doing with holly?
+This sounds way too traditional
+Nice, it is good when leaves grow out of the ground
+they are constantly renewing themselves
+33333333
+Where?
+3333333333
+I don't recall that, though I guess there has been plenty of time to copypaste since my departure
+That is what functions are for.... ; )
+someone should tell him about functions
+I am kind of the opposite, I will waste an afternoon refactoring something to avoid like a line of duplication
+Ah yeah, that is a bummer
+config man!
+no joke
+You know, I have even forsaken the component pattern now
+I read the config from disk on boot, then those values are passed down to the functions that need them, functionally
+It is so much simpler, and really just using the same compositional pattern at every level
+it is really satisfying
+Why? If you want to test with different values, they are just functions so you can invoke them with whatever
+Maybe the idea did not translate in my description
+Everything is a function, so you just call it with different arguments
+config is arguments that come from outside the program, but once they are inside the program they are values like anything else
+Initialization.... you initialize things in the order they depend on each other
+What kind of resources are you talking about?
+I don't have any contentious resources I am dealing with perhaps
+Sure, it claims a port while running
+Well, you still have to tell it to release the port during lifecycle
+it is not automated really
+Sure, but if you know the order that is not so hard to set up
+Sure, I understand component and I have used it many times
+I am saying I don't really need those things
+When I want to release something I release it
+explicitly, during the normal operation of the program
+In general though I don't really release things until the program terminates. Most of the things I write are designed to start up and run indefinitely.
+Any temporary resource is allocated and cleaned up explicitly, which to me is more clear what and when things are happening
+Testability comes from coding functionally. I feel like these systems are *more* testable now that everything is functional from bottom to top
+I can see the value
+I have discovered that it is cleaner and more direct to just call functions
+Also, more composable, since I haven't imposed some arbitrary "top-level" where components are defined and initialized
+Well, in practice I have taken what was previously the top level of a program and combined into other another project seamlessly, so I would call that an increase in composability personally
+What is more composable than functions?
+I can work with the code more flexibly if it is all of the same form, rather than having some values with special behavior that break the symmetry of the design
+It is cool if it helps you out, for me I have had great success just making everything functions
+and config is suddenly not a giant pain in the ass
+Exactly
+no globals
+Really this is all the long tail response to the config snafu in caribou
+it has been quite a journey
+Not sure what you mean by this: `because you don't have explicit and automated data dependencies separate from your code`
+Do you consider component separate from your code somehow?
+Kind of like the dependency an expression has on the bindings in the surrounding let block?
+Yeah totally, that is what initially sold me on component
+Isn't there an implicit relationship between the code that calls stop and the stopping of a given component?
+Okay so you are saying when you just want to initialize a subset of the components this makes it more convenient to track?
+How does your program still work with only a subset of the components available?
+Hmmm I have something similar but they are just functions that take arguments
+Right, just call the function you need
+I'm not sure that actually simplifies things, but I am glad it works for you
+I feel like we are solving the same problem two different ways, I think that is okay
+My way simplifies some things but makes other things more complex, your way simplifies different things but makes other things more complex
+We are each probably simplifying the use case we encounter most
+33333333
+justin_smith: Interesting, I am enjoying this reconstruction of the past
+That does seem weird, but there is a lot of metal play going on in welding, you never know
+That is kind of awesome
+Aluminum is the most fun metal
+in that it is the easiest to do arbitrary things with
+"aluminum, will you do this also?" - answer is always yes
+That sounds like fun. Are you still using the tuner?
+sounds like you are about ready for ear training
+It was dead when we gave the results of all of our publicly funded infrastructure to private companies
+333333
+333333333
+333333
+3333
+: (
+333333333
+https://mobile.twitter.com/NBCNews/status/942827387682787329/video/1
+Me too! Wow, kind of terrifying
+Chanserv has left IRC?
+That sounds bad
+Ah nice
+Okay so Chanserv did not abandon us
+333333
+justin_smith: Saving video for later
+Where was it?
+I've had this dream
+justin_smith: Do you mind repasting that last link? My IRC client crashed as I went to click it
+It is actually the OHSU network. It is fussy and constantly reconfiguring itself (or something)
+My wireless access is .... intermittent
+it doesn't jibe well with the IRC client
+Something about enhanced security
+quile: No worries at all! I was also on hiatus for awhile
+the faithful noisesmith has been holding things down : )
+Good to be back
+Hey justin_smith: what is the name of the clojure schema library?
+Is it just the plumatic schema?
+Or am I thinking about something else?
+That is the one, thanks
+Have you used it yet?
+: )
+We are looking into it now
+Yeah I think it might be okay to declare a certain key is always constrained in the same way, if those keys are namespaced
+I see the existing data issue though, you would need some kind of transformation layer to work with old data
+but for building a system from scratch it seems like a fine constraint
+Yeah all of the automatic features seem pretty awesome, once your spec is defined
+Yeah, once again you need a transform layer from raw data into the spec world, which I think makes sense
+It does add a bit of work though
+I agree it seems like the "right" way to do things
+Yeah, enforcing a layer where "past this point all data has been verified" makes the system more stable as a whole
+and let's you detect immediately when those expectations are violated, at the point where you should detect them
+ie, before they are actually rampant in your system
+Yeah screw that
+I think this goes into the law of not trusting any external input ever
+justin_smith: I think we agree on something!
+mongo is almost the same thing as a hostile external web site
+Wow nice
+That is badass
+I love core.cache, exactly what I always want in a library: simple idea, no surprises implementation, direct and straightforward
+A model library
+Yes, functions: the original interface
+That is how you can tell things are well designed
+usually because of everything you *don't* need
+Agreed
+Those are beautiful
+The history of music theory is so ruled by arbitrary inconsistencies, it seems necessary to do so
+If music theory were physics, we would still have Apollo in a chariot explaining the Sun
+Yeah, this is why I always appealed to acoustics and ratios etc
+but that is really just the beginning
+I don't know how you can claim universality to something that is not even fully defined in scope
+Yeah exactly, good way to put it
+The part I love about music is inherently biological and messy
+That sounds like a universal statement to me ; )
+(referring to your statement, not mine)
+Exactly, we can have a true universal music theory once we understand how throbbing works
+Well, they didn't have all the millenia of accreted intellectualism to get in the way
+They had just discovered rationality and it was still pure
+"when you risk your life for twitter likes and don't die"
+IRC4lyfe
+Luckily I am content with alienation and isolation so I don't need to convince anyone of anything
+Not too far from the truth really
+Or: baby bear discovered by mother owl
+Bear gives birth do owl, licks it into shape of bear
+*to
+That is amazing
+I feel that way every day
+Sometimes I just sit there and let it spill out of my eyes
+33333333
+3333
+The agony of reactionaries is evolving
+I saw it on CNN
+3333333333
+It's an expanding field
+Found anyone else you haven't heard of?
+Nice
+That is badass
+send me some names of the more interesting ones
+Funny, I can see that
+Yeah, it's not Pärt's fault
+he is just making patterns
+When art collides with consumerism.... sigh
+Even state funding is problematic, same problem as physics or any other research area. Public funding is not immune to fashion and marketing, possibly even more susceptible to it in some ways
+Yeah totally, I was thinking of punk as well
+That is its whole ethos
+Now we have youtube which has solved all problems
+Right, like how I listen to mostly functional ambient music that intentionally avoids grabbing attention as a background to coding
+I listen to very different things when I actually want to pay attention to music
+The best music you have to make time to sit down and listen to.... which means I don't play it as much : (
+Yeah do people listen to music these days? I don't have a good gauge on that
+Right agreed. Transport is good for that, though I listen to a lot of audiobooks in that time now
+Now I will actually intentionally sit down and listen to something at home, it is like an event
+I can see that
+Everything is a tradeoff : )
+I have listened to about 100 books since I started.... all books I never would have read otherwise
+(though some are more worthwhile than others)
+but that is all time I'm not listening to badass music
+3333333
+Hey Smitho, synth question for you
+So say I have a bank of generators, each normalized between -1 and 1
+and I want to add them together to create the output signal
+What is the convention for the amplitude scaling on each one?
+Say I have 16 voices.... do I just multiply each signal by 1/16, even if there are only usually 1-4 playing at any time?
+justin_smith: Forgot to use your name
+I feel like there may be a smarter more adaptive way to scale the signals based on how many are playing simultaneously, but wouldn't want to create weird amplitude jumps when other voices come in
+I figure there must be some standard approach to this
+So you always scale based on the expected max signal then?
+Okay
+Yes, that is what I'm discovering
+How does compression help?
+Right, I follow
+basically I am implementing signal generators from scratch, very illuminating
+How does compression transform the signal?
+What is the algorithm, so to speak?
+Okay, then it scales the signal by that average?
+Ahhh awesome
+Cool, I will add that in. So I could add all the signals together and run it through a compressor then
+Ah so by segment you mean partitioning the amplitude axis?
+interesting
+Okay, so partitioning the RMS
+Thansk man, that is a great explanation. I love signal processing
+Makes sense
+justin_smith: Any features you wish these various signal generator frameworks had?
+I'm setting it up so it deals with cyclical graphs
+that is already in
+I have a cool delay where the delay window accepts a generator that can smoothly increase or decrease the window
+Yeah checked out pink, it is cool
+I am implementing all the signal stuff in straight java, then doing the composition in clojure
+Also, you can change up the generator graph while it is playing without interruption
+which is a feature I always wanted
+Oh nice
+That seems way better than my funny limechat thing I use
+justin_smith: Any cool generators you recommend building?
+Nice!
+I am also all digital ocean these days
+finally set my old rackspace server out to pasture
+justin_smith: Yeah I have the delay, I'll check out the fft
+I mean delay is basically a special case of table lookup
+No surprise there
+We can make things work before we understand them ; )
+justin_smith: Where do you read about DSP?
+I am at the point I could use some reading materials
+the things I've made so far are straightforward applications of my preexisting understanding of signals
+Also, curious if there is a way to create a control variable in a noise generator to seamlessly travel between the different noise colors
+Interesting
+Ah cool idea
+definitely going to try that
+I was wondering about feedback, when you mix it back in you have to weight it.... do you also weight the original signal? It seems like if you don't mix the feedback in right you could quickly overwhelm the signal
+Right exactly, so do you use compression here also then?
+Okay that makes sense
+So how do you avoid blowing up the signal applying layer after layer of feedback?
+Yeah I have my eye on waveshaping
+I love that stuff
+Yes dogdog, more awesome word poems
+Awesome, I think I have that too
+though my frequencies are not normalized to anything beyond abstract "rates"
+justin_smith: So when using feedback, how do you avoid blowing up the signal applying layer after layer of the previous signal?
+Ah nice
+Yeah right now the signals are generated, so no sine table, I am just integrating the formula for the harmonic oscillator
+HA!
+Nice
+So is it usually some mix of weighting the original signal and feedback signal and adding them together then?
+Is that the general form? Or is it really all over the place?
+Oh yeah, karplus strong was my next thing to implement
+I can use that as a simple feedback generator
+to get a feel for how they work
+I can imagine
+dB is logarithmic yeah?
+Cool man, thanks for the download, that is a lot of helpful information
+once I get the basic generators down I want to implement some basic diffusion models and get some systems dynamics signals in there
+mostly as control signals, but maybe audio ones as well
+Ha, good to know
+looking forward to that
+I love how screwed up the signal can get
+Audio bugs are awesome in their own right
+"bugs"
+When you do your RMS, how many samples do you usually look back on?
+(for compression)
+That sounds like fun, I'm going to try it out and see how it goes
+3333333
+Hey justin_smith: really enjoyed the show on Friday!
+thanks for the invite
+How did you feel about it?
+333333
+justin_smith: From the outside it seemed pretty coherent
+I thought there was a lot of good constrast between the voices and the viola
+as well as symmetry
+3333333333
+3333333
+justin_smith: Thanks for the synthesis advice the other day!
+I ended up making that interpolating table lookup
+pretty sweet
+karplus strong is next
+justin_smith: You planning anything for your birthday?
+or are you still feeling under the weather?
+3333333
+3333333333
+33333333
+3333333
+justin_smith: Happy birthday!
+good to see you guys last night
+How are you doing?
+Ah yeah, I've messed around with that before
+having a lot of success with coding the low-level parts in java and high level in clojure
+really satisfying to finally just be writing samples.... I think this is the level I've always wanted to work on
+Ah yeah, nice
+Yes, there is a buffer
+4410 samples wide
+trying to strike a balance
+Totally. So far I am making them buffer agnostic, but karplus strong is tricky that way
+Like right now the table does interpolation, so the table's buffer size is independent of the signal buffer
+Right, trying to work in the ideal space as long as possible and translating them to samples at the last moment
+333333333
+333
+333333333
+33333
+33333333333
+How goes justin_smith? What is the status?
+Ah yeah, I can imagine that could be a challenge
+Where are you at in music theory these days?
+That is kind of awesome actually
+I know I have said this before, but I think you would benefit greatly from ear training
+Are you getting closer to where that would be an entertainable idea? : )
+Or should I just never bring it up again?
+Understood, yeah me too
+3333333
+Well justin_smith what do you think? Do you want to continue with the music project as is? Should we switch it up? You just want some free time?
+Cool, I'll be on chat later
+333333
+333333333
+You have to start somewhere
+3333333333
+Hahahahaha
+Yeah that is kind of funny
+I think they got this move out of some corporate motivation handbook
+So sprinklr just acquires LB to snuff it then? I don't understand this stuff
+Ah, good to hear
+Whereabouts?
+Ahhhh
+No way
+so weird
+Why not just use yours though? Still doesn't make sense really
+Cool, good to hear there are other clojure jobs around
+Say hi to jeffgodd for me
+Oh shit
+Oh wow
+Yeah that would do it I suppose
+It does seem bad form
+It is good to switch things up from time to time
+It sounds like since it became sprinklr it kind of went downhill
+Yeah, what do these other companies do?
+Perhaps he doesn't really care yeah
+I think Jeff is working because he wants to, not necessarily because he has to
+Oh! hmmmm
+Then maybe he just really doesn't like India ; )
+But will there be mongo?
+In the end what are the tangible issues with mongo that you see?
+and what would you use instead?
+No
+is it a movie?
+Awesome
+That is amazing, I'll check it out
+I would watch that.
+Funny I just went to an improv show
+I was thinking about getting involved
+Oh! Ha, I meant theater improv
+That is how I took your suggestions
+I guess I have it on the brain, so interpreted your scenario that way
+I think it would work either way
+Have you ever done it?
+I think you would slay at it
+The thing is you don't try and be funny. If people try and be funny it sucks. You just get in the flow and respond with the obvious thing and it seems funny from the outside
+That's why I think you would be great at it
+could be a fun evening, even if it is a total disaster
+I was always into the surrealist over funny improv anyway
+justin_smith: Hmmm interesting, so does the repo referenced need to have a jar associated, or does the system build the jar etc?
+justin_smith: Yeah I can see jeffgodd not wanting to hand over control, that is like his baby
+"clj standalone deps tool you can specify a commit hash on a github repo as a dep"
+Oh, so it clones in the repo and you use the source?
+Hmmmmmmmmmmmmm, is that better? Seems kind of weird actually
+Hey quile!
+Good to hear from you again : )
+Let's jam out soon man, it's my turn to treat you to a show now
+Not at all, no worries
+I go through weeks at a time where I forget to boot my irc client
+Oh really? Okay, I can see that
+Yeah, I am starting to come around
+Go does this, but they just pull from master
+I hate it
+but referencing a specific commit seems like it would solve those problems
+33333333333
+333
+Ha! Yeah just saw that, I enjoyed it a lot
+It reminded me of Stalker.... a lot
+Have you read the book?
+Ah I have been curious about that also
+That sounds cool actually, what projects do you have in mind?
+I looked at wavelets at some point
+I came away with a vague understanding of "fourier transforms with non-sine waveforms?"
+justin_smith: https://twitter.com/mysticfaechild/status/971610057833091072
+I am down with that idea
+3333333
+3333333
+Wooooooooo!
+Back in real life
+How are things around here?
+333333333
+Oh yeah! Where is the new gig?
+I have been missing out on this channel
+Yeah! nice man, congrats on that
+Funding circle looks pretty cool
+I like the idea of p2p loans, will have to see how that works out in practice
+Oh seriously? That is rad
+I didn't realiize he worked there
+Seriously, great news
+That is a key sign
+It is alright, I am actually looking around now
+I have determined having a boss that knows some code is worse than one who doesn't, as they have opinions about how things should be done
+instead of just appreciating the results
+He is trying to force everyone to use Go, which IMO is an extremely unfortunate choice
+I may be. I am going to see how this lead in CA goes, they are doing exactly what I want to be doing (full cell models)
+If that doesn't work out I will probably be hitting you up
+though it is looking promising. The only obstacle now is I am wondering if I can still live in Portland and work down there
+Oh nice! It is at Stanford actually, so a little SE
+not sure how the geography works out down there
+3333333
+quile: Hahaha yeah. I have never really hung out down there
+What is your experience with it?
+Haha well, I have heard similar stories from others
+333333333333
+Saw Flash Gordon last night at the academy theater.... holy shit.
+I don't know how I ever missed that
+What was going on in 1980
+It was an amazing confluence of forces
+That's just the long way to say "plant"
+Wooooooooooo!!
+333333
+33333333
+Hahaha wtf
+333333333
+Oh nice, yeah distsys is becoming your specialty it seems
+Are you going to be constructing a new distributed system or improving an existing one?
+That is beautiful :, (
+It is
+33333333
+That one is dark
+I like "sharp omniscient bottle"
+33333333333
+Hey justin_smith, how's the trip going?
+33333333
+333333333
+Ah nice, so you are being productive right away then?
+I love doing that stuff actually
+bringing order to codebases
+That is the craziest bat ever
+I like the image of a bat smashing things with a bat to determine where things are
+33333333
+Yoyoyo
+How goes justin_smith?
+Welcome back!
+Hahaha in what way does it improve your typing then?
+thanks, good to be back
+Nice. I still love my kinesis, not sure how it can be improved
+I'll have to see a picture
+Ah yeah, that does look cool
+completely split halves
+(nice my paredit was about to freak out)
+The problem with keyboards is they live below the level of conscious thought, so there is this retraining process you have to go through
+kind of like learning a language
+I would love to switch from qwerty, but dvorak has other problems
+and it would be a full on commitment
+Yeah, that too!
+Or like when I play piano in my dreams and the keys are always distorted in some weird way
+too narrow, too long, sticking out at random angles
+Yeah I can see that
+333333333
+333333
+333333
+33333
+333333333333
+I can see that, they are kind of sewn together: https://www.google.com/search?q=sydney+opera+house&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjWjZe_wOfaAhVFzGMKHbHEBrMQ_AUICygC&biw=2560&bih=1316
+I feel like this is more of a cosmetic feature than a fundamental structural unit
+it seems like you would lose some tensegrity by compromising the sphere like that
+Arg is a form of art with more frustration
+I would like to give that thing a spin and see how it feels
+Oh nice! I have had a regular event on Thursdays for so long I haven't been to the clojure meetups
+So are they tele-ing in then?
+3333333
+333333333333
+Nice
+I just hope it is benevolent
+I think if the theology is about the pursuit of truth and harmony perhaps
+justin_smith: I think claiming to be the truth and actual commitment to finding truth are two different things ; )
+Ah yeah! Leila is great
+never got to hang out too much with her unfortunately
+where is she living now?
+333333333
+33333333
+Oh.... really?
+Where is this API?
+Ah, so publicly facing but not free
+Who is using this API right now?
+And why?
+Kind of reminds me of fullcontact
+but worse
+I remember you resisted a smartphone for a long time
+Are you going back?
+It is weird to willingly carry a spy device around with me everywhere I go
+Right, so you would have to go total savage then
+Yeah that seems pretty severe
+Well, good information to know
+I feel like as a human being now we are generating so much data just by living and there is such a demand for knowing all of our data that there is really no way to avoid it at this point
+Even if you never owned a phone or computer, there is still a ton of data on you out there
+I mean, there were tracking mechanisms in place going back awhile now, back when everything was paper
+digital reality has just amplified this exponentially
+Back in the day investigators could pull travel records, bank records, housing records etc and get a similar picture at a far lower resolution
+The thing is, government agencies already use all this data and have had it for awhile now. This is just notable in that anyone can get it.
+Yeah, I feel dystopia is being relentlessly generated all around us while leaving day to day life relatively untouched, and once critical mass is reached the transition will be sudden and complete
+We will find the walls were being built all around us while we were paying attention to superheroes or whatever
+Hahahaha
+That is a pretty great idea, you need to find the right person to pitch this to
+333333
+Oh hey
+Well, I just gave them eight references
+I think they are still checking them
+but once that is done I should have an offer?
+Kind of a maddening process actually
+Has been going on since January
+Thanks!
+How is your situation going?
+Ha, hopefully I won't need to turn it down ; )
+(should it ever arrive holy christ)
+Ah yeah, that is mad
+That is awesome
+Ah yeah, privacy concerns are a bitch
+I get plenty of that with HIPAA at OHSU
+justin_smith: It is, though I don't really use it
+33333333
+Ha, yeah man!
+That is getting pretty ultimate there
+Power station
+333333333333
+Hey man! Yeah, more delays basically
+They want to bring me in at a higher level, but that means they have to open a new job posting for it and do due diligence etc
+Yeah so it is good news, but it means I am still essentially waiting for an offer
+We'll see!
+quite a saga
+How is your work thing going?
+3333333333
+Nice!
+justin_smith: Hey man!
+I took a look at it, it seems pretty cool
+Haven't integrated it into the flow yet though
+Ah, you will have to share your insights
+Ah that is badass, I see what you're saying
+If you have the spec, you can just generate the data
+in that form
+Have a good article to point to? Or maybe write one? : D
+I would like to try that out
+I could probably figure it out from your description
+but there should be something that describes this process
+Do you have a blog yo?
+Ah that place is delicious, I miss having more than two food options
+Hey quile!
+NZ, badass!
+I miss that place
+So wait, you are coming back?
+Nice
+Yeah
+Always access to bath salts
+I'm not sure the last time I walked into target
+but also, I don't have kids
+I can imagine target becomes an important source of items in parenthood
+33333333
+333333
+3333333333
+Yo
+justin_smith: Thanks man! Looking forward to it
+3333333
+Hey man, thanks for coming out to the beach! That was a blast
+Hahahaha awesome
+3333333
+Dude those buffalo goats are out of control, this isn't sustainable
+Oh nice!
+I might be going down to look at a place here soon
+My first day is July 16
+Good to hear you are getting back down there!
+33333333
+Hey justin_smith: Looks like I am moving down around the 7th of July, first day is on the 16th
+When are you down next?
+we should hang out down in some other city
+33333333
+33333333
+I'm not sure that's possible
+justin_smith: Back on a computer after a generous break : ) How goes over there??
+(it's true, that was sarcasm)
+Oh! Nice.... are you saying this hasn't been done yet?
+Awesome, that sounds like a great problem
+Checking it out
+have you looked into it?
+Hey man yeah, this is my first week
+in the lab
+getting everything set up, finding out how they do things around here
+Pretty bonkers! This place is awesome
+They are building cells. It is amazing
+I have a lot to learn ; )
+How is your gig going lately?
+That is awesome
+Kind of like typed clojure, in a way
+33333333
+Man how many aardvark corollaries went into the creation of this carpet
+Carnage
+3333333
+I want to hear the tonal thunder
+Hey justin_smith: Looks like I'll be setting things up on google cloud, you ever used that?
+Right now they have a jenkins continuous integration deployed on a local cluster.... basically emulating a server (they restart it every week)
+Implementing a server on a task execution system.... kind of interesting ; )
+I have told them about the existence of servers, which they currently don't have : O
+though they do have a google cloud account that one person in the lab is using, so I am thinking about spinning that up
+Yeah, I am wary of all these hosted services.... seems like it provides similar functionality but doesn't give you control over deployment
+I would much rather just have a vm and install what I want on it
+justin_smith: That is surprising.... what country was it originally from? Was this a conquistador cultural appropriation thing?
+I didn't realize that
+Right, they loved trying to incorporate "exotic" cultural motifs, but it was mostly pretense
+I like how we have become so accustomed to being able to access all information generated throughout human history that it is surprising when we can't
+that is remarkable
+Kind of like go ; )
+Yes, just make something else of the same term orders of magnitude more popular and erase it from history
+3333333
+Ah yes, been meaning to see that one
+definitely going to check it out
+Fuck yes
+That is what I like to hear
+Oh yeah? What is their medium online? Twitter or other?
+Link to the game?
+Games are great : )
+lots of potential for modeling and structuring human interactions
+Nice! Not sure how I missed this guy
+3333333
+I need a bouncer
+this is ridiculous
+Smithaxe I am copying your setup right now
+Sweeeeeeeeeeeet
+weechat is the way to go
+should have done this years ago
+333333
+justin_smith: Yeah heard something about that (twitter)....
+What are the changes? Are they locking down the API? Is LB in trouble?? ; )
+since it has been hanging out in plaintext for awhile now : P
+How would you like to receive the new password?
+I do somewhere
+yes I remember when I was into that, let me refresh my memory
+That needs to become a habit
+non habits do not survive apparently
+(just got back from lunch)
+Hmmm emacs did not ask, perhaps I need a mode enabled?
+Also, I assume there is a better way to do this than to attach the encrypted file to an email....
+but there you go : )
+Yeah not in package-list-packages either
+A rogue script apparently : O
+Nice, got that set up now
+GPG is great
+Yeah the integration with emacs kind of cinches it for me
+So if I pick your key and my key we can both decrypt then?
+Awesome
+So any alternative to sending as an attachment in gmail?
+3333333
+Is there any other kind?
+33333
+333333333
+It is never complete
+quile: Sorry man, just went through that!
+totally understand how things can go south
+Do you have some leads?
+I can reach out to some people, what kind of thing are you looking for?
+Actually, send me your CV and some details and I will ask around
+Yeah, best time to look IMO ; )
+33333333
+justin_smith: Pretty good! I just gave a demo yesterday of my first big feature
+Before this they didn't have a way to run multiple simulations in parallel
+and they have a guy coming from Virginia in September who is going to try to make a kind of agent based model out of multiple whole cell simulations
+So I set up a distributed system where each cell has its own process and communicates with a larger environmental context through kafka
+So basically the environment sends messages to all the cells as to what their local concentrations are
+and the simulations run for a given time period, calculate their new local changes and report those back to the environment
+the environment waits until it has received messages from all the registered simulations then integrates them and comes up with new concentrations to send back to all the simulations
+You can even add or remove simulations while it is running (necessary for cell division) and it takes it in stride
+Kind of cool yeah!
+good to come in and feel like I am contributing right away
+this is something they have been wanting to do for years and didn't know how
+basically everything has been bound to a single process
+How about you? What are you helping out with lately?
+When are you coming by the Bay next? : )
+Pretty stoked about bigraphs lately: https://www.cl.cam.ac.uk/archive/rm135/Bigraphs-draft.pdf
+reminds me of when we tried to make the graph language like lisp is a list language
+going to try to implement that
+(the milner)
+it seems like a pretty great abstraction
+43333333
+dextrous hunger algebra sounds interesting, though I hope I'll never have to use it
+333333
+3333
+No better place than #tripartite
+3333
+celery facts are the worst
+justin_smith: Whoa! Link? Gist or repo or something?
+Nice! Let's definitely hang out then
+I have a caltrain pass so I can come up to the city
+Where are you staying?
+Ah, well you could come down here as well, I have a (digital) piano : )
+Also I could bring the trombone or bass clarinet your way
+There is always the waterfront or something
+3333333
+3333333
+justin_smith: Wow man, insane!
+Let me know how it goes : )
+Good to hear
+Congrats man!
+justin_smith: Hey man! Welcome : )
+What's your plan?
+How long are you here?
+Awesome, Saturday during the day is probably the most plausible time for me to hang out
+Caltrain is an hour+ each way and lets me off in the southern part of the city
+Sounds good! Looking forward to it
+If you feel like coming out this way one weeknight I would be happy to have you, understood if not though
+I'm right off the California street stop
+Hey quile! How goes man?
+333333
+Ouch
+Ah, congrats on school! Man, I never appreciated how awesome elementary school was at the time
+and sorry about the job, that sucks
+Any good leads so far?
+(I think I would rather have my cheese null moist than indentured unitary, just because I feel liberated cheese probably tastes better)
+Never again
+A profitable startup?? Whoa
+Lots of crypto going on, I have a friend who keeps bugging me to get involved in his ICO
+If I wasn't busy I might try it out, why not?
+Turns out you can't avoid gambling in life, you are betting on one thing or the other
+Me, I'm betting on ammo and food
+(not really, I'm betting the system keeps going as it is as I have prepared for nothing)
+Though I did just get a 55 gallon water drum, just in case
+Also, crypto has been falling steadily since the big rush last year
+but that doesn't necessarily mean it's over
+I personally think the crypto thing may take over in 20 years, but the tech is not there now
+you have to start somewhere though
+justin_smith: Yeah! I think I read that too
+From what I hear, the best thing you can do is forge good relationships with your neighbors
+and have stuff like chocolate and salt yeah
+There are so many different scenarios to prep for
+I think the most immediate and plausible is probably the quake
+in which case I want to have some water and food
+Annie is doing a bunch of canning of all the stuff in her garden, that seems smart
+justin_smith: That is a beautiful story
+Reminds me of, have you read "Man's search for meaning" by Victor Frankl?
+A similar theme of finding beauty in your fellow human beings in terrible situations
+Second story, not so beautiful : O
+That lady is an amazing writer btw
+So once again, make friends with your neighbors
+I think it still makes sense to have supplies, so you can help where you can
+I have avoided ever buying a car or a gun in my life.... I know perhaps it is a privilege to do so, but I hope to never have to deal with these things
+Cars are different I suppose in that I use car rental services, and I have never used gun rental services
+Hey quile: gig is awesome
+I'm actually building cells
+my first project was to take the simulations and run them in a distributed way, through message passing with a shared environmental context
+It is awesome, they have been wanting to do this for years
+Last week I got an animation running so you can see the cells moving around consuming glucose in real (simulation) time
+It is an agent based system, where the agents are whole cell simulations
+It is like the coolest agent-based simulation to ever exist
+Basically, completely stoked to be working on this stuff, what I've always wanted to do
+Living in the bay area, well.... it's not why I'm here ; )
+I've had a lot of remote calls with people playing distributed board games
+developing a new one with my dad and brother, a sequel to Sol I think
+which is the same since we worked remotely even when I was in Portland
+Playing a round of Space Empires 4X with Anno
+Working on a game called "Chronovore" with Mohammad
+etc etc
+All of my friends still live in Portland ; )
+Miss you guys
+On the plus side, I get to bike to work
+the week is great, cause I'm building cells
+weekends are weird
+quile: I think I went on a long response to your question yesterday after you had left ; )
+Ha no worries
+I'll send you the transcript in an email
+Ah yeah!
+That would be a cool feature, hmmm
+justin_smith: What time is your flight on Saturday?
+quile: sent you the transcript
+How is the job hunt going?
+quile: Yeah agreed. It is a fine balance, confident but not arrogant, humble but not submissive
+and yeah you have some serious experience
+That's awesome. In a way this is a good opportunity then
+at least, I always try to look on the bright side : )
+Good luck man
+quile: Oh yeah of course, please do
+and would love to have you by!
+justin_smith: I am the same way
+always way early
+So we can hang out until what, 3?
+Awesome, looking forward to it
+I'll try to get out of bed that day ; )
+Oh rad!
+All of slack?
+It is kind of great, new job doesn't really use slack so I have forgotten about it
+Feels good, not going to lie
+I love counterintuitive things
+Were you able to make it a library? Can you share the code?
+333333
+It never left
+justin_smith: What kind of things did you intuitively expect they did not provide?
+3333
+3333333
+Ha! So apparently zalgo is stored as separate strings.... ?
+3333
+That escalated quickly
+justin_smith: client app! Bah
+How extensive was the issue
+?
+Haha phantom dollars, that sounds undesirable
+3333333
+justin_smith: Yeah man! Me too
+got an idea of what you want to do?
+Where should we meet?
+Also, there is a pretty awesome improv show tonight: http://www.improv.org/shows/tickets/?eid=29348&edid=113092
+I was wondering if I shouldn't come out tonight and crash at your airbnb and we could catch the show?
+(if there is room somewhere)
+Otherwise I can just show up tomorrow morning
+I'll be taking the caltrain in, but from there I can catch the redline I think would be the best?
+What's the hotel? I'll check it out
+That seems reasonable
+Let me see about tickets
+justin_smith: Looks like if I take all the transportation I will arrive at the theater at 7pm even
+not sure I have time to walk from your place
+want to meet up there at 7? There is probably somewhere to eat around there
+Yeah looks like a few places
+Hmmm though I might want to check into the room first and drop stuff off, might have to leave earlier
+Are you going to be at the hotel?
+Yeah that could work
+Maybe I will take transport to the hotel and leave time to walk to the show
+planning backwards....
+Yep, if I take the bullet train 20 minutes earlier I get to the hotel at 6pm
+that sounds better
+justin_smith: ETA at hotel at 6:06pm
+I'll have to check in etc
+so we can just walk from there
+meet up at hotel 6:20?
+3333333333
+33333
+3333
+333333333
+33333333
+justin_smith: Congrats on that man, a new level : )
+333333
+good to have range
+333333333
+333333333
+33333
+33333
+33333333
+33333333
+justin_smith: Ah interesting, I am in Portland on Friday!
+33333
+@justin_smith: Okay what is the consensus, best book to learn clojure?
+copypaste wants to learn
+Haha
+So, no consensus then
+I thought about asking in the #clojure channel but didn't want to be annoying
+asking a question that has probably been rehashed a thousand times
+Maybe I'll ask then
+I just call him copypaste in my mind now
+3333333
+quile: Happy birthday tomorrow!
+How old are you going to be?
+Hahaha congrats man that is a solid age to be. Prime?
+Prime years are the best
+3 x 13 is not so bad, 13's are pretty cool
+It's all the even birthdays that make me nervous
+333333
+333
+3333333
+justin_smith: WTF! that guy you didn't get along with? Paco or whatever?
+Oh shit, that sounds serious
+Curious how that works out in practice
+you'll have to let me know how it goes
+They must have had trouble getting teams to cooperate ; )
+quile: Badass! Glad you were able to decide : )
+What was the other group?
+Ah plangrid looks cool
+Yeah that is a tough one
+Looks like it, this looks like industry changing endeavor
+Haha disruption has become a cliche now
+At this rate what is not cliche? Can anything avoid becoming a cliche?
+I feel like the rate of digestion of whatever into a cliche is accelerating as life goes on
+Looking at both I think you made the right choice ; )
+Right "cliche-resistance"
+When do you start?
+Nice man
+So what went wrong with old premise? Started to go off the rails or something?
+I feel like there is always highly instructive insight in business failures
+Or did your boss turn out to be an asshole and the org is still fine?
+quile: Understood, I realized after I asked that maybe it's not the most delicate question ; )
+Total bummer how someone can come in and screw something up like that
+glad you were able to get out
+justin_smith: Great show man! You guys are awesome
+Do you have recordings of these shows?
+Well, intonation comes from the ear first : ) it is a constant adjustment. If you can hear it you can make the adjustment
+3333333333
+33333
+3333333
+3333
+Hahahahhaa
+3333333
+3333333
+It's good to let them age a little
+3333333333
+33333333
+3333333
+justin_smith: Oh? Never heard of that guy
+Do you have a good first piece to check out?
+33333333
+3333333333333333333
+justin_smith: Aha, welcome!
+What does your new team do?
+Ah nice, I like how you get to see different parts of the city
+333333333
+333333333
+33333
+333333333
+Hey justin_smith: how is your visit going?
+Oh nice, that sounds like interesting work
+justin_smith: Yeah, the subject is fairly deep. What are you thinking of?
+Ah I think I know what you're talking about, this happens all the time in code
+along with its converse "overabstraction"
+3333333333
+Hey justin_smith: sorry I didn't get a chance to come by the city during this visit
+Are you back in Portland?
+33333333
+Ha! Yeah man
+welcome to the future
+That stuff will probably turn out to kill you or something, but for now it's great
+This sounds like real life
+justin_smith: Hahaha oh so it wasn't just clojure that made him an ass then?
+3333333333
+33333333
+33333333
+Thanks for taking care of our humble bot D
+333333333!
+3333333
+333333333333333
+33333333333
+Hey justin_smith: how's the music going lately? Am I missing any shows coming up?
+Ah, sorry to hear that
+I mean, I understand
+but sorry to hear that the side effect is losing touch with the music community
+Sucks that is so tied into facebook
+I have an account, but I can't stand to log into it
+3333333333
+3333333333
+3333333
+Hey quile! Welcome back : )
+Totally
+I think I've just started to emerge from this process
+How is the new gig??
+DDDDDDDDD
+33333333
+quile: Just saw your question.... (lots of holiday travel) looks like air is back to normal!
+I left on the Tuesday you asked actually, apparently they ended up canceling classes that week
+it was grim for a bit there yeah
+Apparently this is just what the future is like now
+Oh yeah, and python is fucking horrible yeah
+You know, it is not even so much the language I hate (though I could rant about it for a bit)
+it is really the environment stuff
+the proliferation of virtualenv, pyenv, pyenv-virtualenv etc etc is a huge red flag
+You are basically writing C, in terms of linking and dependencies go
+I don't think we are getting around python for modeling and scientific computing, but at least our servers and distributed architecture can use something sane
+justin_smith: Oh yeah? That is awesome to hear about fennel
+Yeah totally, but if they are starting on the right foot with deps and packages that is a good sign
+usually that stuff is ad hoc established at the beginning and then you are stuck with it forever
+(at least, that's what happened with python)
+(and ruby)
+justin_smith: Did you have your fennel con then??
+quile: Agreed. I have had far fewer problems with JVM dependencies than any other programming environment
+Maybe the whole goal of designing a VM forces you to solve problems about your environment you don't have to face until later if you are using a native language
+3333333333
+It is basically a longform phrase for "vaccine"
+What is all this clojure hubbub about? I am out of the loop
+I mean, Rich is not wrong.... technically. But languages live and die on the community, not the creator
+by announcing that he is supreme commander and doesn't care what anyone thinks, he weakens the fabric of the community as a whole, which is ultimately bad for the language
+How did js and ruby deal with the social problems well?
+Ah yes, that is true
+333333
+Steam engine?
+Is that about those crazy hats?
+3333333
+That one is great, I think I saw that star trek movie
+and you are right, it is about the interaction not the badassness of the individual words
+333333
+3333333
+333333
+quile: That sounds rad! Recently saw Hilary Hahn in solo concert perform the Bach partita's for violin
+It might be the most amazing thing I've ever seen, not sure
+Yeah, something about the whole show being solo made it extra amazing, like we were entranced the whole time
+she lives and breathes those Bach pieces
+amazing how much music can come out of that tiny little instrument
+Yeah, especially the Chaconne at the end of the D minor one
+Yeah, just to be able to play it is mastery, then she plays it effortlessly and like a soul transcending, it may be the single greatest solo performance I've seen
+333333333
+333333
+333333333333333333333333333333333333
+Haha
+Did you guys see the Giuliani tweet? https://twitter.com/RudyGiuliani/status/1068570837459050496
+(hint, click on the link)
+3333333333
+33333333
+3333333333
+33333333333333333333333333333333333333333333333333333333333333333333
+33333333333333333333333333333333333
+333333333333333!
+Must be an even number
+3333333333333333
+3333333333333333
+Every religion ever
+3333333
+33333333333
+justin_smith: Not sure about the first error, probably swallowed somewhere in the IRC framework?
+justin_smith: The second one means he is not getting the username/password I sent you in GPG at some point
+justin_smith: bllleleeeeeerrrrrrrgggg man what is up with that guy
+Tried to use cider/nrepl again recently and it throws all kinds of errors?
+3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+I have so many new nouns
+33333333
+33333333333333
+*shudder*
+Don't miss scala ho boy
+3333333333333
+Someone's got to do the dirty work
+quile: Hey man yeah! I am heading up on the 23rd, you around?
+justin_smith quile: Hey guys, I will be up in Portland from the 23rd to around the 3rd or 4th, you guys around at all?
+Nice! Let's rock out then
+https://sciencenotes.org/wp-content/uploads/2017/07/Periodic-Table-JustMetals2017-1024x576.png
+Yeah me too! Pretty much totally open that whole time
+justin_smith quile: Nice! Let's hang out for sure
+excited to see everyone
+Hahahaha at a hotel or something?
+Ah, some people stay at the airport : |
+Cool man, I'll make the trek out there then
+Also, if you want to come visit stanford let me know ; )
+Totally yeah, it is actually far enough away to be kind of an obstacle I've discovered
+Also I think I'm picking up annie's hand me down vehicle so I will be mobile, if people want to go to the gorge or coast or anything
+3333333333333333
+3333333333333333
+quile: Definitely. Or it could be the essential particle for stupidity, kind of like the graviton for gravity
+Hmmmmm you should not be storing my 3333333's dogdog
+333333333333333333
+33333333333
+33333333333333333333333
+Happy solstice everyone
+Alright, shutting the computer down for break
+quile: No worries at all man!
+quile justin_smith: Sorry I missed you both. Spent most of my time moving out of the 11th street house : (
+333333333333
+3333333333
+quile: Ha! Yeah I'm out of there.... piano still there for now, I need to find a home for it
+Also, lots of board games available if you want any ; )
+I sent three boxes of games to my family in Tacoma, three of them went to Annie, 7 are coming back down to me and 17 boxes are going away
+quile: Ah yeah, thanks for the lead! Yeah you don't want a giant baby grand in the middle of your living room??
+33333333333
+3333333333
+33333333333333333
+3333333333333
+justin_smith: quile: You guys ever use FPGA's?
+I am interested in an application
+Looking at this paper: https://www.ncbi.nlm.nih.gov/pubmed/19162916
+seems super cool
+Verilog seems insane
+justin_smith: That sounds like a lot of fun actually, would love to write something that spits out verilog
+what do you mean by "collapsing abstractions"?
+Ah I see what you mean now
+Yeah I can imagine that is pretty tricky to design
+justin_smith: You have any shows coming up? I've been playing with Danny Sasaki (the drummer with the rototoms from that show you guys did) and we have been talking about doing a show. Would be great to do one with you guys!
+I mentioned it to Stephanie but as a kind of hypothetical, but we met up right before I left and he is into the idea also
+They have that great red piano at the community center you guys always play at, I think it could work
+Who's Mr. Flato??
+Ah yeah I remember this guy. I don't think I've met him but I've heard you talk about him. Let me know if you guys get a show together and want some experimental acoustic music : )
+3333333333333333333333333333333333333333333333333333333333333333333333333333333
+333333333333333333
+33333333333333
+3333333333333333333333333333
+33333333333333333333333333333333333333333333
+(too late)
+That's a cause I can get behind
+3333333333333333
+Oooooooohhhhh that sounds amazing
+A bunch of divine bears singing?
+count me in
+333333333333333
+33333333333
+33333333333
+3333333333333333333333333333
+33333333333
+I am hoping more will come around
+3333333333333333333333333
+Hahaha perfect
+Wait where's Nietzsche?
+3333333333333333333333
+That's just tautological
+Hahahaha wtf
+3333333333333
+Just wrote a python extension in C
+I think I love C
+it is so antifunctional it becomes beautiful again
+Seriously
+Like, cool I have this block of memory and I can navigate anywhere inside of it? Who needs abstractions??
+Yeah, I just took all this garbly numpy code with a bunch of fancy operations and turned it into a few nested loops
+It does way less, way less code, way faster, and actually clarifies what is happening
+I mean I appreciate numpy
+but nothing like raw pointer access and loops
+333333333333
+3333333333333333
+33333333333
+333333333333333333333
+33333333333333
+333333333333333333333333333333333333333333333333333
+Hahaha nice
+@justin_smith: Hey man, in town next week! Want to get some lunch or something?
+Cool, you have a favorite lunch spot lately? Been awhile since I've been downtown : O
+Ah that place is delicious
+Is Thai Peacock still a thing?
+Well we can work it out, Indian place sounds good. Thai peacock I have warm memories of. I don't remember anything else about downtown Portland, but that is probably sufficient knowledge
+3333333333333
+33333333333333333333333333333
+3333333333333
+33333333333333333
+justin_smith: Cool! Let's do 12:30 or 1 then
+Maybe let's just say 1
+justin_smith: Ah awesome, I'll let you know when I get there then
+or heading there
+33333333333333333333333333
+3333333333333333
+333333333333
+Hey justin_smith, great to see you! Thanks for dealing with Abhi, he kind of followed me to lunch : ) I like the guy though, he has a phd in physics and builds some serious tools. Learned a lot from that guy so far.
+Oh yeah! It is sitting in my driveway now : ) I finally have a car
+Really the only way I would get one is as a handmedown from a friend, we'll see how long it lasts!
+33333333333333333
+33333333333333333333333333333333333333333333
+3333333333333333333333
+Hey quile! welcome back
+(nevermind quile is no longer here)
+3333333333333333
+3333333333333333
+I still use postulate thumb mathematics in a bind
+quile: So you are partially responsible for the air trombone apocalpyse then
+Hahahaha
+Hahaa
+There we go
+justin_smith quile: Okay, what do you guys use for devops? Puppet? Ansible? Whatever the F else 300 options? Just ssh in and install stuff??
+About to do a large google cloud deploy
+justin_smith: Do you dig mesos? I mean, you called it a rube goldberg machine but that is like all of computers
+quile: What did you use at premise then?
+Apparently there is also now Terraform (sigh)
+Yeah totally, I don't think we need the whole CI thing
+Ah okay, so terraform is a kind of meta-ansible or something?
+(been awhile since I've had to deal with this stuff and it seems like they've invented a bunch of stuff in the meantime)
+Ah okay
+interesting
+Oh yeah, happy birthday!!
+Which is highly serious
+Ha yeah, congrats guys!
+I am working for a giant bureaucratic organization ; )
+No stock options here
+There are lots of scientists in lab coats, which is a tradeoff I guess
+I would buy into that venture for sure
+blurry omen turtle, the only honest kind
+3333333333333333
+It's either delicious or it kills you instantly
+33333333333333333
+Rambunction is highly prized
+3333333333333333333333333333333333333333333333333333333
+33333333333333333333
+33333333333333333
+Hahahaa
+Kind of the loser of the searing morlock club
+searing laser morlock and searing meteor morlock play pranks on him
+333333333333333333333333333333
+3333333333333333333
+33333
+3333333333333333
+33333333333333333333
+333333333333333333
+33333333333333333333333
+Hey quile/justin_smith! General concurrency question/puzzle for you, wondering how you would solve this problem
+We have a state which is a giant vector of integers (counts). Each time step, all the processes read from this state and separately determine their updates (additions or subtractions at each index). When updates are applied, any negative values at any indexes are invalid.
+The only way this could happen is if two or more processes subtract from the same index enough to pass zero.
+How do you ensure no values drop below zero?
+: )
+quile: No, you want to do the best thing you can, ie honor the updates of each process to the fullest extent you can
+justin_smith: That is interesting
+Ah that makes sense, it seemed like a familiar idea
+justin_smith: That makes sense. So what if you want to still want to apply as much of the updates as you can?
+Like, just rejecting the update is not an option
+So one option is you do it in order, and the later processes just get shafted
+This introduces a bias towards earlier processes
+which is an artifact since there is no essential ordering
+Yeah that is an option
+The other potential solution is to reduce the time step so that these two processes need less and less until it works out that together they leave a total of zero
+which would involve recalculating some stuff
+Right, I think I want a kind of "multi-compare-and-swap" where it gathers all of the potential updates and then resolves them as a collection
+justin_smith: What kind of state model did you have in mind?
+So I think I want to encode updates as messages
+justin_smith: Exactly, this is where it is leading me
+Yeah there is a reconciliation burden between all these processes which I don't think can be avoided
+Yeah totally, very similar situation actually
+It is generating a signal basically, a complex vector signal
+Yeah very much so, this is entirely dataflow in a giant cycle (actually many cycles)
+Now I am wondering about implementing this as a DSP algorithm
+Yes true
+Yeah, like different time scales
+It has definitely come up
+and we currently have certain submodels which proceed to "steady-state" during a time step which basically means they are miniature simulations happening inside the larger simulation
+justin_smith: Hahahaha
+That is my daily struggle
+Hahaha oh man : O
+WTF
+Well, I suppose you could get a throwaway windows laptop for like $20
+Yeah, it is surreal now
+I am so steeped in *nix culture it is shocking to see what people do on windows
+Actually, it is shocking just to see people navigate around in finder on their macs to do something with a file
+Like, terminal bro
+Seriously
+I am too!
+started on commodore64.... took a bad detour through windows that put me off computers at all
+Saved by the *nix, thank you justin_smith
+(Or damned, one or the other)
+justin_smith: Oh yeah, that is a classic pattern
+How many times have I seen that
+Also, gets at a key truth in software development: It is easy to make a program do what you want, in comparison to making it comprehensible to others when it goes wrong
+That is almost my definition of software "maturity"
+Basically it has been used enough for long enough that enough people got frustrated enough with its opaqueness to actually build tools to gain insight into its operation
+Hahahaha yeah and then after the initial rush the reality of how vast the effort is to actually make something usable sets in
+which mostly continues from that point ad hoc until you end up with everything being PHP
+33333333333333333333333333
+Yeah that is a painful one
+33333333333333333
+justin_smith: No, never heard of the guy
+What is he up to?
+33333333
+Wow, how did I miss out on that guy
+I didn't know anyone else doing clojure at OHSU, in fact there was moderate hostility from some parties
+33333333333
+3333333333333333333333333
+33333333333333333333
+"gracious paraprosdokian gibberish" is amazing
+Hahahahaha my life in a nutshell
+333333333333333
+333333333333333333333
+333333333333333
+33333333333333333
+Wow, that is a true poem
+That, is not
+333333333333333333333333
+3333333333333333
+There we go
+That is the most outlandish poem yet dogdog
+quile: Hahahaha no way! Well, not quite our idea but getting there
+Soon creation will devour itself
+33333333333333333333333333333
+Agreed
+justin_smith: Hahahaha I think you showed him man, nicely done
+You should be proud, even if he does not understand enough to be
+at the end of March and beginning of April if you guys want to hang out
+quile: Maybe I can give you a few days heads up? Or is it better to play it by ear?
+Cool
+will do
+justin_smith: You have any shows coming up or anything? Maybe we can go to a show or something
+I have a show on the 29th, which may or may not be either amazing or a disaster
+quile: I found the ultimate drummer and we are going to do some improvised pattern kaleidoscope music
+At Leaven Center
+Yeah! Should be fun
+I've been practicing
+3333333333333333333333333333333
+Oh is it Bach day?? Nice!
+I will be honoring him with some fugues later tonight
+333333333333333333
+I'm going to have to remove all the threes from your history
+Thanks for bringing him back up justin_smith: what was the stacktrace this time?
+I periodically get inspired to update him
+but then forget what the issue was
+Huh, so his ping just fails at times
+sounds like something deeper in the lib
+connection recovery man, the bane of distributed systems
+(well there are probably lots of banes)
+Hahaha
+You know what's reliable, crushing things with rocks
+people shouldn't be using computers if they want something reliable
+Ah okay! Yeah seems like a lot of people are in other countries (?)
+Dude you are going to London???
+Wow
+That sounds amazing, I hear there are some good people over there
+Isn't Sam Aaron a londoner? And bodil perhaps?
+Hey man, congratulations! That is a huge step
+good luck out there
+Have you met her yet or is she an internet person?
+Ah that is even better
+Another poem dogdog
+333333333333333333333
+3333333333333333
+333333333333333
+quile: Oh you are going to autodesk? Did your company get acquired or something?
+We recently met with one of the guys there in charge of systems research or something
+This guy: https://www.autodeskresearch.com/people/azam-khan
+That is awesome, congrats!
+Had you been there long enough to get a bonus of some kind?
+Fuck yeah
+that was good of them!
+a good sign
+33333333333
+This is the story of my life
+(not really that just sounded like a badass thing to say)
+It did happen to me as a child though, several times, waking up with the pillow attached to my ear from bleeding out of my ruptured ear drum (can't hear very well out of that ear)
+so is true in a way
+It may have happened right after I saw that movie for the first time now that I think about it
+3333333333333
+Wow, talk about self-referential
+3333333333333333333333333
+ouch man
+Who put discharge in there
+> git blame
+3333333333333333333333333333
+33333333333333333
+333333333333333333333333333333333333333333333
+333333333333333333
+333333
+3333333333333333
+333333333333
+3333333333333
+That's like what a forehead is
+333333333333333333
+3333333333333333333
+333333333333333333
+justin_smith: I think I started it and got kind of weirded out
+trying to remember
+Didn't the protagonist just start having random sex with people?
+Yeah : ) it seemed random
+Like, I just didn't follow the motivation or what was happening
+but that may be because I'm such a vanilla
+Apparently some people live this way and it is normal to them?
+Right, very much a product of the 70's or whatever
+That makes a lot more sense
+I think if I went into it with that perspective I may enjoy it more
+Yeah I remember it being very interesting, and the prose was kind of crazy and gritty and surreal
+Yeah, so that just keeps going then? Hahahaha
+I don't know when I became such a puritan
+3333333333333333333333333333
+3333333333333333333333333
+Every three word poem is just another euphemism for the internet
+No one liked my question about oracle.... did I touch a sore spot unwittingly? Or some other kind of ignorance? I have been doing this lately
+3333333333333333333
+It seems pretty rough actually
+Nothing concrete, just seems like they are making it harder and harder to access the jdk without oracle's wacky license
+I fear for the future, is all
+333333333333333333
+3333333333333333333333333333333333333333333333333333
+33333333333333
+Whoa there universe
+33333333333333333333333333333333333333333333333333333333333333
+33333333333333333333333333333333333333333
+33333333333333333
+justin_smith: No way!
+Wow man, crazy!
+Enjoy the mayhem, whoa : O
+Yeah that is a pretty good phrase, don't even need to be from another continent! Always applicable
+How long are you there?
+Ah okay, welcome back! So you were there a week then?
+Nice man, you have assembled some kind of clojuremacs
+That is pretty badass. So fennel feels usable then? I haven't tried it yet
+Awesome that lua is still getting some love
+I thought it was on some kind of decline, though it has found a niche somewhere? Embedded stuff or something?
+Nice. Yeah everyone squawks about the 1-based indexing but ultimately it wasn't that big of a deal. Like, pick one it's fine
+Julia also has this feature
+I found it way less disruptive than I thought it would be
+How is fennel performance?
+So the data structures are not persistent then? That would be a mental shift
+eeeeeeeeeeeeeeeeeeeeeeeeee
+3333333333333333333333
+33333333333333333
+Usually you want those things to be stable
+3333333333333333333333333333
+LOL
+3333333333333333
+33333333333
+Awesome! I'll check it out
+3333333333333333
+LOL
+33333333333333
+333333333333
+333333333333333333333333333333333333333333333
+3333333333333333333333333
+33333333333333333333
+333333333333333333333333333333333333
+33333333333333333
+3333333333
+dogdog not sure about your poems today
+33333333333
+3333333333333
+3333333333333333
+justin_smith: Hey man, you around the bay?
+Not going to daft punk tonight after all ; )
+Was thinking about heading to the beach tomorrow perhaps
+How long are you around?
+Haha awesome, okay good to know
+When do you take off Saturday?
+If you can make it down here at all that would be awesome.... I was up in Berkeley last weekend but this weekend I think I am here
+Wow man, I didn't even know those existed
+I'll check that out
+I am also up in Portland next week
+Have you built some kind of instrument with it yet? I would like to see that
+Ah nice, yeah! this thing looks awesome
+Hanging out with Samia this Friday night but totally down to meet up for a bit if you come out, you could meet this person
+333333333333333
+33333333333333333333333
+33333333333333333333333333333333333333333333
+: O
+justin_smith: LOL that is beautiful
+So, I had some influence on you after all? Or perhaps just a ghost lurking in your mind
+It even has the quasi-biological function names
+Yeah, DNA sequencing is nuts. They only have little fragments and then overlay and piece them all together in the most parsimonious way
+it is very non linear
+and relies on a lot of statistical findings
+but all the shards come pre-cut
+Well, they are cut before they make it into the machine. It is more that the process of separating and preparing the DNA for sequencing also splits it up into shards. By the time they dump it in the machine it is a bunch of fragments, and the output of that machine is like a giant array of subsequences, which is the input to the sequencing algorithm
+So by the time the code gets there, they are already cut
+LOL
+justin_smith: Yeah, denaturing is just like a protein unfolding because of temperature or pH or something, not actually lyzing anything
+lyzing is the cut
+yeah
+: )
+Almost an assembly or recruitment
+justin_smith: Link to ; or, the Whale ?
+Looking around, it is a hard thing to google for
+That's it! Thanks
+someone wrote a PR with a title that is uncannily evocative of the title
+of that book
+33333333333333333333
+I want to hear the tonal ones
+333333333333333
+Are there any other kinds?
+33333333333333333333333
+3333333333333
+3333333333333333333333333333333
+justin_smith: I have not, sfw?
+sfs?
+LOL yes! I have seen this somewhere but forgot those were the words
+I want to draw portraits of arbitrarily generated sequences of letters
+Well, sound is essentially related to structure and motion and ultimately resonance, so it makes sense really that different shapes would make different sounds
+side note: I believe the word is onomatopoeia
+you put a tomato in there : ) maybe because you like tomatos?
+Perhaps it is more acoustically parsimonious with the definition
+LOL
+333333333333333333333
+justin_smith: Yeahhhhhh!!
+Listening now
+unreasonably satisfying
+3333333333333333333333333333333333333333333333
+33333333333333
+justin_smith: Oh yeah! I had wanted to go to that, of course I lost track of everything in the intervening time
+that space junk project sounds pretty awesome actually
+As I understand it there is a *lot* of space junk
+Oh wow, that distsys talk looks awesome
+Did you meet any good people? It seems like a pretty great conference for making connections with interesting people
+That is badass!
+We are horrible animals
+look at what we've done
+How long have we been in space?? smh
+Wow, great idea
+33333333333333
+LOL quile, give us a chance to respond man
+justin_smith: badass!
+What game are you making?
+Great
+justin_smith: That is pretty spectacular
+So on the game, is it just you guys or is there more of a team?
+3333333333333333333333
+33333333333333
+333333333
+3333333333333333333333333
+33333333333333333
+33333333333333333333333
+3333333333333
+33333333333333333333
+33333333333333333333333333333333333333333
+333333333333333333333
+Don't eat at taco bell
+Let's go with not
+justin_smith: Yeah, great to hang out! Glad you got to meet her : )
+justin_smith: Awesome news! What did you guys do?
+That is awesome man, happy to hear it
+It's good just to find the fun there
+Haha yeah man! Feels good
+there is a feedback loop there for sure
+33333333333333333333
+justin_smith: Like a weapon??
+I have downloaded ableton and now I am making a bunch of wacky songs this week
+it is absurdly fun
+Not sure why I resisted digital music for so long (oh right I hate computers)
+Oh yeah? Same conceptual model?
+I didn't know ableton doesn't support linux
+still hacking on my old mac (though I will never buy a new one)
+I'll check it out, thanks!
+Do you distribute on soundcloud pretty much?
+trying to figure out where to post these songs
+I'll send them over, they are pretty maximal so far so may offend you ; )
+Ah okay, I'll check out bandcamp then
+We'll find out, looking forward to feedback : )
+still trying to figure out how to compose everything, but I think I have some good material here
+Okay, bandcamp registered
+Thanks!
+333333333333333333333333333333333
+LOL congrats man what!
+nicely done!
+I have my first track, I am subverting the pop genre: https://soundcloud.com/youdonotexist/platform
+(it even has a beat)
+Thanks for checking it out! I like the silence at the end : )
+Yeah still very much an improvisation
+I laid down a bunch of tracks and then you can turn them on and off as it records
+so kind of an incoherent mass
+Lots to learn
+Good to get some feedback, I'm going to keep trying stuff
+33333333333333333333333
+33333333333333333
+3333
+333333333333333333333333333333333
+justin_smith: So you use bitwig then? I downloaded ableton from ignorance, are they comparable?
+Have you used both?
+Wanting to learn something that works on linux also
+333333333333333
+Interesting, yeah it looks like bitwig has more built-in synthesis
+I was thinking about putting instruments together with supercollider or something
+Any new progress in programming audio synthesis or is supercollider still the way to go? : )
+I still have all this overtone code
+I kind of want to code sounds and then control them through midi
+I also have the beginnings of a modular synth in java
+Always
+333333333333333333333
+Okay new track: https://soundcloud.com/youdonotexist/imdbon
+Warning: beats
+Nice! Probably because of all of my default synths ; )
+Thanks for listening, still trying to work everything out
+definitely being stuck with built in sounds is a limitation, I keep wanting to code things
+Turns out overtone was updated last two months ago?
+someone is maintaining it, at least for bugs it seems
+33333333333333333333333333333
+33333333333333333333333333333
+333333333333333333333
+justin_smith: Is there a simple clojure work queue server? Like, one client puts messages in different queues, other clients make requests to a queue and claim a single message etc
+otherwise I'm about to write one
+justin_smith: I have been using rabbit but it is heavy to create and destroy queues
+wanted to make something more lightweight, but I hear your warning
+Just imagining it it feels like using atoms and atomic swaps gives the behavior I want, but there are probably gotchas yeah
+LOL right, I see
+So it is not about making the queues behave correctly, it is about making the queues behave correctly in the face of unpredictable network behavior
+Well, I feel like that can still happen when I am using rabbit
+but I hear you
+I wish kafka worked for work queues
+Right I follow
+Cool thanks for the advice! So make rabbit work or use redis, don't try to implement a super simple work queue
+Cool, back to hunting through the rabbit docs
+For some reason it seems so simple : )
+You have some good reading on these issues?
+You read that whole book etc yeah?
+Interesting, what state about other servers do you think a work queue needs?
+That is crazy though, I see what you mean. It is like the communication problem with the two generals as a fundamental obstacle
+Really there is no way to make that guarantee
+I feel like this is some kind of "information can only travel at the speed of light" limitation for distributed systems
+That said, the work queue I imagine only needs to know about its queues and what messages are in it, perform an atomic operation when a client requests a message, and perform an atomic operation when the client completes the message
+Failure modes: client doesn't get the message, client fails and never says it completed message etc
+Yeah I am already convincing myself it would end up a hairy problem
+good perspective on that
+Agreed
+de acuerdo
+justin_smith: Awesome, that makes it pretty clear
+Planning things out with the other engineer today, this will make good discussion
+Yes, I feel like I've done this before
+LOL I'll check it out
+Interesting! It is kind of mathematical philosophy?
+Still working through Robert Rosen's "Life Itself" (for the third time)
+and Samia and I are going to go through her old quantum mechanics book, which I'm pretty excited about
+It's like math poetry, I love it
+This is how to make the world a better place
+Okay yeah, verified this is one of the greatest things ever. Ordering a copy for myself
+Also, kind of inspiring art form!
+Yeah but I need one to wave around and quote out of etc
+seriously, great find, thanks!
+Right, those books that are a kind of essential creation. This is one!
+3333333333333333333333333
+333333333333333333333333333333333333
+3333333333333
+3333333333333333333333
+Wow dogdog those are some pretty bad poems, kind of all of them
+Nice try shifting blame, but you made these poems dogdog
+3333333333333333
+3333333333333333333
+333333333333333333333333
+3333333333333
+3333333333333333333333
+33333333333333333333333333333333333333333
+justin
+That didn't work
+I was typing then my server went down
+Apparently it took about ~26 minutes to work it out
+but it did somehow send my partial message across?
+I was going to tell you I have 11 tracks total now ; )
+Entertaining possible names for this new genre (if it really is a new genre)
+333333333333333333333333333
+333333333333333333
+perhaps
+3333333333333333
+33333333333333333333333333333333
+welcome back
+justin_smith: LOL
+If only
+the world
+made that much sense
+3333333333333333333333333333
+Welcome back
+justin_smith: Oh hey! Yeah let's hang out
+I was thinking about coming into town tomorrow night actually
+going climbing with Samia
+Want to try climbing? ; )
+or we can meet before or after
+or Samia and I can change our plans
+I didn't think I'd like climbing, but now I love it
+How late do you stay up nowadays?
+Okay, well Mission Cliffs is open to 11, so we could hang out before that, somewhere until 8:30 or 9?
+Yeah! museums are surprisingly great
+anything you have in mind?
+I have been to the MOMA a few times but always still love to go
+Looks like MOMA is only open until 5, not sure I can get there that early unfortunately
+unless I take the day off, which could be okay
+I am plotting taking the day off so we can go to MOMA
+It will never arrive, until May
+Okay taking tomorrow off! That means I can sleep in and then let's go to MOMA in the afternoon : )
+That sounds great. MOMA closes at 5 fyi
+3333333333333333333333
+Hey man, great to hang out! Glad we got to see some Rothko and Twombly, that was pretty amazing
+333333333333333333333
+It probably evolved from an upright promenade released from selective pressure
+33333333333333333333333
+justin_smith: Hey man, getting back into digital synthesis lately, working on some table generators and digital waveguide synthesis
+Do you have any good resources for modern synthesis?
+It has been many years since I looked into it, I'm wondering if there has been any progress or if it is still this Julius O Smith guy: https://ccrma.stanford.edu/~jos/swgt/swgt.html
+Also, I don't know how it took me so long to discover that CCRMA is on campus and they have shows every night of the week, I'm going to start attending
+What is :b8 and :b5? Do you have a fancy IRC client that displays emojis or something?
+333333333333333333333333333333333333
+33333333333333333333333333333333333
+gaining new abilities every day
+Make a choice
+Hey justin_smith! How you holding up?
+I may be going insane already
+doesn't bode well
+Yeah! it is hard to care about small things when giant things are happening
+there is like a scale of attention or caring, a concentration of concern that large events wipe out the signal of smaller concerns
+justin_smith: Hey man thanks! I was going for the slow melting into madness, then sudden catharsis
+Hey awesome! I'll check that out
+would be great to play with you and others
+we could even emerge with some recordings or something
+I've been getting deeper into this signal processing also, would be good to have a call on filter design/theory etc at some point
+Right! IRC is great, but most people won't use it really
+I did a tour recently through all the messaging apps
+I settled on signal, it is end-to-end encrypted and all the heavy security guys seem to concur it is the way to go
+Basically, it would be good to have a music group chat, which leads immediately to platform choice etc etc tech is the downfall of humanity
+You have thoughts on that? We could rally people behind a common cause I think
+Basically, until I leave my house again, group chat is the future of human interaction
+Yeah, that too
+discord does all that I think
+(listening now, thanks for sending!)
+Hey man, this is great
+I haven't heard your viola in awhile, it's come a long way
+the potential is getting realized there
+justin_smith: Exactly. I've been finding that spontaneous music making takes continuous practice and almost total mental and spiritual commitment to truly honor
+Like, it is only valid if you attain true flow state resonance with total mind immersion lol but maybe!
+justin_smith: Awesome! I will be listening to this today
+Haha hey godgod?
+Whoa man, this George Lewis is amazing!
+Where has this been my whole life
+justin_smith: Want to try out this ninjam soon? Looking into it, we can host a server but it will need some bandwidth

@@ -23,3 +23,287 @@ Wait, what was the issue again? I forget that one
 Hmm I thought we were doing some kind of compare, or at least checking the result of the set or something. It has been too long though
 Okay, good to know!
 Yeah man, would love to read that blog post about setting up the kafka/zookeeper server
+Ooooh ouch
+Ah yeah!
+That guy
+What is he doing lately?
+That is scary
+Hahaha right! I am only patchwor_ right now, who has a much smaller tree
+A map that behaves like C pre-proc macros?
+That sounds nightmarish
+I wonder what those scientists are seeing in there...
+"Blue... so blue!"
+I am patchwo__ now
+Oh wait
+No I'm not
+I was last time I spoke, but no longer!
+justin_smith: But then don't you just create a bunch of intermediate sets anyway?
+It is probably still around somewhere
+justin_smith: Awesome! I will not be there
+unfortunately
+Where is it?
+justin_smith: Awesome! Sorry I missed it
+I knew they had to be out there somewhere, glad you found them
+Okay
+Hahaha WTF?
+Well, I am honored?
+I mean, I have told people about it
+So, maybe that makes sense
+That is hilarious... what are you influential in justin_smith?
+How have you not checked that?
+You built a whole feature and never checked?
+: (
+Well, since the whole thing is based on membership in lists, I guess that is not too surprising
+Ah! I have a Kafka question for you justin_smith
+What the hell does this error mean?
+org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - Auto offset commit failed for group monkey: Commit cannot be completed since the group has already rebalanced and assigned the partitions to another member. This means that the time between subsequent calls to poll() was longer than the configured session.timeout.ms, which typically implies that the poll loop is spending too much time message processing. You can address
+ this either by increasing the session timeout or by reducing the maximum size of batches returned in poll() with max.poll.records.
+I mean, it is pretty descriptive
+so it mostly makes sense
+I guess what is not explained is why is it rebalancing the consumer group?
+And: apparently a session is only maintained in between polls for so long?
+So, if you don't check back in, Kafka assumes you have died and reassigns messages it gave you earlier to a new consumer?
+*consumer in the same group
+Funny
+especially because this consumer group has only one member
+Ah, but it gets stuck in a cycle reprocessing the same messages over and over again
+It hits that error, then it goes back to an earlier point and replays all the messages, until it hits that error again and the whole thing repeats
+So, the auto-commit offset option may be the culprit
+It is funny, I am using the canonical java kafka consumer
+It seems like it should be doing auto-commit right, but maybe not!
+Right, so it's not just me, that seems like bad behavior yeah?
+Yeah, appreciated
+Well, fixed it by increasing `session.timeout.ms` and `request.timeout.ms`
+So there you go
+I love these
+I have followed every twitter account you have posted BTW
+Yeah, who was it?
+And it is true, you only tell me about these things afterwards
+Wow, amazing
+That is some serious dedication
+I love that piece
+So many steps in the artist... one of the most steps of any endeavor
+I got disconnected and missed a piece I think
+Last thing I read was "so your lib should work fine if you treat it as a plain node module"
+But yeah, that makes sense
+Those were the missing lines
+Cool, thanks for your help on this
+I think that was the key distinction I was missing
+Yeah, uberjar, not jar
+That was where I was mistaken
+I won't do that no
+Yep, makes way more sense
+I thought it was a package manager
+Node is the package manager
+At least, npm is
+Helps a lot to think of it this way
+That is awesome, exactly what I need
+Thanks man! Getting into the world of modern JS is a little bewildering
+3333333
+Something suspicious about the inherency of this drum
+A little too much emphasis on the inherency IMO
+3333
+a bot honeypot?
+No problem, we'll work it out
+Ah nice!
+I feel like there are a couple libraries you could extract out of peregrine and kingfisher
+Kingfisher: frontend/backend synchronization
+that would be a useful framework
+Do you guys even use Ibis anymore?
+Wow that sounds badass
+So you just expanded peregrine to do everything then?
+It sounds great
+Make it a lib! : )
+I can see that yeah
+You would need a whole introspection/logging system for it
+Right. Having logs is not enough, you have to be able to decipher them
+It's almost like you could create a "call stack" structure and pass it around to all the jobs as it percolates through the system
+to keep track of how you got to this point
+jinx
+Yeah, I think that would work
+Right, I see now that something should mirror the journey structure as the jobs are run
+Haha yeah that is huge
+A pretty important realization
+So it wasn't ibis per se that was the problem, but how we were interacting with it
+Right, so would it work if ibis had a thread pool then?
+I could have sworn I set up claypoole and ibis at some point
+Good to know
+Wow
+vowels are basically interchangeable
+See, I can actually read that
+Then write finnegan's wake
+quile: Thanks for helping out last night man, that was fun
+Too many ways to screw up
+Okay, so I think you mentioned this last night, but what do I do if my package is all jsx files?
+Ah, interesting
+But in the import you don't say the suffix, hmmm
+Right so that is why you put the .react.js, so when you import it is .react
+jinx
+Cool, so I tried that but it was not able to read them
+I guess I need to get babel loader involved somehow?
+Ahh wtf
+cool, I'll try that
+Wow! That is quite a package.json : )
+So, "babel-plugin-react-transform" then
+Yeah, still the error:
+Module parse failed: /Users/spanglry/Code/bmeg-proxy/node_modules/ceto/src/components/pie.jsx Unexpected token (13:14)
+You may need an appropriate loader to handle this file type.
+Okay, I'm just going to put all of your babel stuff in
+Hmmm same error. Do I need to direct webpack to use the loader somehow?
+Just pasted my webpack.config.js into the shared doc when you get a chance
+I feel like I'm right on the verge here
+Maybe it is because the `loaders` point only to the app dir, but I need to load dependencies through babel also?
+sigh
+No worries at all, thanks for helping!
+I will refrain from mentioning yet again how insane all this is. Thanks quile
+justin_smith: Brutal
+Yeah, I have gotten in the habit of `mapv` lately for this reason
+I appreciate laziness, but wish it was a little more opt in.
+Either you opt in or opt out I guess
+If laziness was opt in I guess it would get used way less
+but having it be opt out leads to funky stuff sometimes
+Ah interesting, I have not yet made the shift into the transducer mind set
+but that sounds like a good reason
+Hey justin_smith: Have you tried using aleph before?
+It uses netty under the hood
+I am getting a weird resource/memory leak in it and wondering if you had any insight
+I think I found it.... I was doing too much stuff in my streaming map (moved it out to before it hits the stream)
+justin_smith: Also, have you ever run into a situation where you can't change the log level with timbre?
+netty seems determined to keep the log level at debug no matter what I do
+Nevermind, fixed that too : )
+I guess this channel is my rubber duck today
+justin_smith: Yeah! Can't wait to see that
+Though I have no idea why bill clinton is in there
+Are you going tonight?
+Hey justin_smith: Do you like hiking?
+Well, I just invited you
+quile: I assumed you can't make it out hiking tomorrow, but maybe that was presumptuous of me?
+33333
+Whoa weird, hey patchwork!
+I need to get an alternate work handle
+Aha, I will check that out
+I have never turned off emacs, so.... yeah
+Haha never restart. That's when the botnets get you
+That is an elaborate visual
+!! well put
+Sweet! Yes, we all need to hang out
+Just send me emails about the shows, I will put it on a calendar
+Thank you for not just assuming I will see things on facebook : )
+Just opening them screws you??
+Wow
+Or just teach the machines to code
+Call it "mystery van"
+33333
+     333333
+justin_smith: What was that irc client you use again? Where you stay logged in forever and connect to it?
+What do you do again? You have a server or something?
+That's the one you mentioned before I was thinking of
+(hveem that is)
+That seems good. What is the deal with hveem then?
+(I guess I can read the article)
+Oh, hmmm. Don't care as much about that
+I see, that is cool
+That is what I'm looking for, thanks man!
+justin_smith: Hey man, sorry to miss the show last night! How did it go?
+Awesome
+I ended up going to the animation festival at hollywood theater earlier with the intention of coming by, and then that thing lasted 3 hours!
+Glad you got some kind of recording
+justin_smith: How do you handle processing a kafka queue? Do you do all processing on a separate thread? Or a separate thread pool? I am getting timeout errors for taking too much time processing in the poll loop
+which is kind of annoying
+So, do I just have one thread polling and sending out messages to other threads?
+It seems like I need a queue to process my queue
+"Auto offset commit failed for group caf9bdfa-1095-49be-8688-d2d9f603e194: Commit cannot be completed since the group has already rebalanced and assigned the partitions to another member. This means that the time between subsequent calls to poll() was longer than the configured session.timeout.ms, which typically implies that the poll loop is spending too much time message processing. You can address this either by increasing the sessi
+on timeout or by reducing the maximum size of batches returned in poll() with max.poll.records"
+Right, that is my question
+So, do I take all the messages off the kafka queue and put it on another queue??
+The details of this handoff are what I am trying to figure out right now
+I don't want to create a future for each message
+What happens if I use a claypoole thread pool with say 30 threads, I pass each message to the thread pool, and all the threads are busy?
+Does it just error out?
+Right, so I guess I am not sure where to pass the messages once I get them off the kafka queue
+in a way that doesn't cause other problems in the system
+if I can't process them in the thread I got them from
+Okay, so each consumer polls, gets some messages, commits an offset, disconnects, then processes the messages, then connects again
+that is an elaborate process
+Haha okay
+It is not okay right now, because when the consumer fails to commit the offset it goes back to the beginning, creating an infinite loop of processing the same messages over and over again
+If it just errored out that would be greatly preferable!
+It seems like really bad behavior
+I wish it did just stop, or I could detect when it happened
+instead of circling around over and over again forever
+justin_smith: That is what happens, and no, it is because since it failed to commit the offset in time, it started again with the original offset
+It doesn't go back to 0, it goes back to the last committed offset
+Right, and the only way I know is that it takes way too long, I go in and find out that it is going in an infinite cycle
+Well, when pulling from a consumer you call `poll` and it sends you many messages at once
+I agree!
+I am not committing manually, maybe I should do that?
+Is there a manual offset commit?
+That may be a better way to do it, not sure that solves the problem though
+Right, so what we want then is to do a poll, get the messages, commit the offset, do the processing, then only poll again once all those are complete
+Holy crap
+Why does it not already do that
+I am not using a wrapper no, per your advice
+I think it was the right way to go
+but now I need to implement sane processing behavior, so weird
+Sweet man thanks for talking through that, I'll give this a shot
+That is crazy
+Dude! Can't wait for that one, I need to use it as well
+!
+I am having a weird problem with aleph, there is some kind of reference leak in netty somewhere
+haven't figured it out yet
+That would be super helpful
+That is what I suspect is happening
+When is your talk coming out? : D
+justin_smith: You may or may not be happy to know that I fixed the kafka infinite loop problem by setting `max.poll.records` to a lower number (in this case 80)
+Apparently if that config option is not set, it sends back as many as it feels like
+which can go into the thousands
+80 may be too few, but at least it can process and commit the offset before the session timeout
+1
+Yeah, I started down the "commit offset then process" path then realized that just compromises all the guarantees Kafka is trying to make
+There is a reason the consumer is kind of racing to get its stuff done in time
+It just takes accepting that approach into your heart
+justin_smith: Right, process then commit ---> at least once. commit then process ---> at most once
+I guess I prefer the "at least once" guarantee
+which seems to be the default kafka guarantee, at least. It is kind of cool you can pick which guarantee you want
+Or at least, that kafka does not impose one or the other approach on you
+It is pretty brilliant
+My frustrations with kafka always turn out to be artifacts of my own ignorance and not flaws in kafka
+Amen
+justin_smith: That is a serious achievement!
+Though I won't believe it until you open source the framework ; )
+justin_smith: Saw Kedi! It was pretty good, enjoyed it a lot actually
+but I clearly have that toxoplasmosis brain parasite thing that makes you worship cats
+Let's see Stalker!!
+Man I would love to see that again
+When is it playing? Let's set up a night for it
+justin_smith: Just saw that funny "Colossal" movie
+I enjoyed it immensely
+I like how it is kind of a morality play, to show how ordinary people harbor heroes or villians within
+just ordinarily your character is not tested on such a scale
+I mean, there were issues, but overall it was a hit
+Man that was brutal
+That was the one thing, he was just super unpleasant
+but then I guess they had to justify the whole villiany thing
+Right, the whole "use your own caring and kindness against you as a means of control"
+It was oddly plausible for how fantastical it all was
+Hey justin_smith: Yeah! We were driving by your house on the way to the gorge and I called to see if you wanted to join us
+I had sent you an email about it earlier and you didn't answer, so I assume that means you didn't want to go
+Ah, right
+no worries at all
+Oh man, glowing orbs!
+It's real, this is the future
+World leaders holding glowing orbs
+Also, finally got here: https://twitter.com/everyorb/status/866421008684781568
+33333333
+333333333
+Now we need a twp for every year
+justin_smith: Awesome movie last night! If a little ridiculous.... though I think it makes its point well about portraying the frivolity and out of touch nature of the upper classes
+What do you mean? I thought that was all found footage from 1911
+33333333
+3333333333
+33333
+33333
+33333333
+Yeah where are you staying down there?
+justin_smith: No, what's that?
+I like how you have a device now to support your crazy passwords
