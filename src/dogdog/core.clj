@@ -308,7 +308,7 @@
                                 restart-opts)))
      (alter irc assoc :chains
             history))
-    (when-let [auth (System/getenv "IRC_AUTH")]
+    (when-let [auth (System/getenv "DOGDOG_PASSWORD")]
       (irclj/identify irc auth))
     (doseq [channel channels]
       (irclj/join irc channel))
